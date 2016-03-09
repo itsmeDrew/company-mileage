@@ -28,7 +28,7 @@ module.exports = {
   images: {
     build: { // Copies images from `src` to `build`; does not optimize
       src: src+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)'
-    , dest: build
+    , dest: build+'/img'
     }
   , dist: {
       src: [dist+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)', '!'+dist+'screenshot.png'] // The source is actually `dist` since we are minifying images in place
@@ -37,7 +37,7 @@ module.exports = {
       , progressive: true
       , interlaced: true
       }
-    , dest: dist
+    , dest: dist+'/img'
     }
   },
 
