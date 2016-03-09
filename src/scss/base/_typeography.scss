@@ -1,3 +1,6 @@
 // ==== TYPEOGRAPHY ==== //
 
-a { color: green;}
+a {
+  color: $cm-blue;
+  text-decoration: none;
+}

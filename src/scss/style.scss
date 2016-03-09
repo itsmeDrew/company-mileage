@@ -6,6 +6,7 @@
 // CORE
 @import "core/mixins";
 @import "core/config";
+@import "core/colors";
 
 /*!
 Theme Name: #{metadata(theme-name)}
@@ -36,3 +37,4 @@ Domain Path: #{metadata(theme-text-domain-path)}
 
 // COMPONENTS
 @import 'components/header';
+@import 'components/nav';
