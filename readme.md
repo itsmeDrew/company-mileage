@@ -1,12 +1,6 @@
-# A WORDPRESS/GULP STARTER KIT
-##### WIP
+# Company Mileage Website
+###### WIP
 
-## Documentation
-Visit https://github.com/synapticism/wordpress-gulp-starter-kit where it is well documented.
+##### Built with Wordpress
 
-## Modifications
-This is using all the work Synapticism has put in and putting my own small spin on it including:
-* Sass files further broken out
-* Included Jeet
-
-##### WIP
+Designed by brandcave.co. Developed by itsmedrew.com
