@@ -22,10 +22,17 @@ Domain Path: #{metadata(theme-text-domain-path)}
 */
 
 // BASE
-@import "base/normalize";
+@import 'base/normalize';
+@import 'base/buttons';
+@import 'base/fonts';
+@import 'base/forms';
+@import 'base/helpers';
+@import 'base/lists';
+@import 'base/normalize';
+@import 'base/typeography';
 
 // VENDOR
 @import 'jeet/scss/jeet/index';
 
 // COMPONENTS
-@import "components/header";
+@import 'components/header';
