@@ -16,6 +16,7 @@
         <div class="site-branding">
           <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
           <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+          <img src="<?php bloginfo(template_url); ?>/img/logo.png" alt="" />
         </div>
         <button id="responsive-menu-toggle"><?php _e( 'Menu', 'voidx' ); ?></button>
         <nav id="site-navigation" class="site-navigation">
