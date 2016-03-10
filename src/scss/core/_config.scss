@@ -1,29 +1,45 @@
 // ==== CONFIGURATION ==== //
 
-// Set all your configuration variables here!
+///////////////////////////////
+/// BREAKPOINTS
+///////////////////////////////
 
-// Width of the overall site as well as the left and right content columns
-$width-site:    1000px;
-$width-left:    650px;
-$width-right:   350px;
+$breakpoint--xlarge: 1200px;
+$breakpoint--large: 970px;
+$breakpoint--medium: 768px;
+$breakpoint--small: 480px;
 
-// Breakpoints
-$break-small:   480px;
-$break-medium:  620px;
-$break-large:   800px;
+///////////////////////////////
+/// TYPEOGRAPHY
+///////////////////////////////
 
-// A standard margin
+$base-font-family--serif: 'Times New Roman', serif;
+$base-font-family--sans-serif: arial, sans-serif;
+$base-font-size: 16px;
+
+///////////////////////////////
+/// SPACING
+///////////////////////////////
+
 $spacer:        30px;
 
-// A modest palette; see `_library.scss` for the color() function
-$_color: (
-  text: #333,
-  link: steelblue,
-  link-muted: steelblue,
-  body-background: white
-);
+///////////////////////////////
+/// SLICK SLIDER
+///////////////////////////////
 
-// Metadata; use metadata() to access
+$slider-heading__width: 55%;
+$slider__height--small: 225px;
+$slider__height--large: 425px;
+$slider__height--xlarge: 500px;
+$slider__margin-bottom: 5rem;
+$slider-dots__color--inactive: $black;
+$slider-dots__color--active: blue;
+
+
+///////////////////////////////
+/// METADATA
+///////////////////////////////
+
 $_metadata: (
   theme-name:               "testTheme"
 , theme-uri:                "https://github.com/synapticism/wordpress-gulp-starter-kit"
