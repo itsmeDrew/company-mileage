@@ -1,8 +1,17 @@
 // ==== NAVIGATION ==== //
 
+.site-nav--wrapper {
+
+  @include breakpointLargerThan($breakpoint--large) {
+    @include col(8/12);
+
+    text-align: right;
+  }
+}
+
 .site-nav {
-  float: right;
   display: inline-block;
+  text-align: right;
 }
 
 .site-nav__link {
@@ -11,7 +20,7 @@
 
   color: $cm-blue;
   text-transform: capitalize;
-  padding: 1rem 2.75rem;
+  padding: 1rem 2rem;
 }
 
 .site-nav__link:hover {
@@ -19,6 +28,8 @@
 }
 
 .site-login {
+  width: 100%;
   float: right;
   padding-bottom: .5rem;
+  text-align: right;
 }
