@@ -14,7 +14,11 @@
   text-align: right;
 }
 
-.site-nav__link {
+.site-nav__list li {
+  display: inline-block;
+}
+
+.site-nav__list a {
   @include font-size(15px);
 
 
@@ -23,8 +27,8 @@
   padding: 1rem 2rem;
 }
 
-.site-nav__link:hover {
-  color: lighten($cm-blue, 20%);
+.site-nav__list a:hover {
+  color: darken($cm-blue, 20%);
 }
 
 .site-login {

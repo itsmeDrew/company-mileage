@@ -19,11 +19,18 @@
         <a class="btn-primary site-login__btn" href="#">Request Demo</a>
       </div>
       <nav class="site-nav">
-        <a class="site-nav__link" href="#">security</a>
-        <a class="site-nav__link" href="#">industries</a>
-        <a class="site-nav__link" href="#">solutions</a>
-        <a class="site-nav__link" href="#">company</a>
-        <a class="site-nav__link" href="#">blog</a>
+        <ul class="site-nav__list">
+          <?php
+            $sitePages = array(
+              'depth'        => 2,
+              'exclude'      => '',
+              'post_status'  => 'publish',
+              'sort_column'  => 'menu_order',
+              'title_li'     => ''
+            );
+          ?>
+          <?php wp_list_pages($sitePages); ?>
+        </ul>
       </nav>
     </div>
   </header>
