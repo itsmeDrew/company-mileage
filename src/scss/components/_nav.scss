@@ -1,5 +1,24 @@
 // ==== NAVIGATION ==== //
 
 .site-nav {
+  float: right;
   display: inline-block;
+}
+
+.site-nav__link {
+  @include font-size(15px);
+
+
+  color: $cm-blue;
+  text-transform: capitalize;
+  padding: 1rem 2.75rem;
+}
+
+.site-nav__link:hover {
+  color: lighten($cm-blue, 20%);
+}
+
+.site-login {
+  float: right;
+  padding-bottom: .5rem;
 }

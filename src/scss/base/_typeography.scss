@@ -4,3 +4,7 @@ a {
   color: $cm-blue;
   text-decoration: none;
 }
+
+a:hover {
+  color: lighten($cm-blue, 15%);
+}

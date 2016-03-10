@@ -1,0 +1,34 @@
+///////////////////////////////
+/// BREAKPOINTS
+///////////////////////////////
+
+$breakpoint--small: 480px;
+$breakpoint--medium: 768px;
+$breakpoint--large: 970px;
+$breakpoint--xlarge: 1200px;
+
+///////////////////////////////
+/// BASE
+///////////////////////////////
+
+$base-font-family--serif: 'Times New Roman', serif;
+$base-font-family--sans-serif: arial, sans-serif;
+$base-font-size: 16px;
+$base-container: 960px;
+
+///////////////////////////////
+/// HEADERS
+///////////////////////////////
+
+
+///////////////////////////////
+/// SLICK SLIDER DEFAULTS
+///////////////////////////////
+
+$slider-heading__width: 55%;
+$slider__height--small: 225px;
+$slider__height--large: 425px;
+$slider__height--xlarge: 500px;
+$slider__margin-bottom: 5rem;
+$slider-dots__color--inactive: $black;
+$slider-dots__color--active: blue;

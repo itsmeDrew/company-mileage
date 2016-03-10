@@ -1,9 +1,12 @@
 // ==== HEADER ==== //
 
 .site-header {
+  @include cf();
+
+  padding: 2rem 3rem;
   background: $white;
 }
 
 .site-branding {
-  display: inline-block;
+  @include col(4/12);
 }

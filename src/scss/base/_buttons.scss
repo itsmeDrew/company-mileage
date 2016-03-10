@@ -1,1 +1,21 @@
 // ==== BUTTONS ==== //
+
+.btn {
+  @include borderRadius(3px);
+
+  display: inline-block;
+  padding: .5rem 1rem;
+}
+
+.btn-primary {
+  @extend .btn;
+  @include font-size(14px);
+
+  color: $white;
+  background-color: $cm-orange;
+}
+
+.btn-primary:hover {
+  color: $white;
+  background-color: darken($cm-orange, 5%);
+}

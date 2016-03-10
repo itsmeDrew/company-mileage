@@ -14,10 +14,17 @@
     <div class="site-branding">
       <img class="site-branding__logo" src="<?php bloginfo(template_url); ?>/img/logo.png" alt="" />
     </div>
-    <nav class="site-nav">
-      <a class="site-nav__link" href="#">Link</a>
-      <a class="site-nav__link" href="#">Link</a>
-      <a class="site-nav__link" href="#">Link</a>
-    </nav>
+    <div class="site-nav--wrapper">
+      <div class="site-login">
+        <a class="btn-primary site-login__btn" href="#">Request Demo</a>
+      </div>
+      <nav class="site-nav">
+        <a class="site-nav__link" href="#">security</a>
+        <a class="site-nav__link" href="#">industries</a>
+        <a class="site-nav__link" href="#">solutions</a>
+        <a class="site-nav__link" href="#">company</a>
+        <a class="site-nav__link" href="#">blog</a>
+      </nav>
+    </div>
   </header>
 <div id="wrap-main" class="wrap-main">
