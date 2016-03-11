@@ -1,1 +1,19 @@
 // ==== HELPERS ==== //
+
+@mixin hidden--sm {
+  @include breakpointSmallerThan($breakpoint--medium) {
+    display: none;
+  }
+}
+
+@mixin hidden--md {
+  @include breakpointSmallerThan($breakpoint--large) {
+    display: none;
+  }
+}
+
+@mixin hidden--lg {
+  @include breakpointLargerThan($breakpoint--medium) {
+    display: none;
+  }
+}

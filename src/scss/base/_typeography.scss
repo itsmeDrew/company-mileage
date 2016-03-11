@@ -1,5 +1,9 @@
 // ==== TYPEOGRAPHY ==== //
 
+body {
+  font-family: $base-font-family--sans-serif;
+}
+
 a {
   color: $cm-blue;
   text-decoration: none;
