@@ -41,6 +41,17 @@ module.exports = {
     }
   },
 
+  fonts: {
+    build: { // Copies fonts from `src` to `build`; does not optimize
+      src: src+'**/*(*.eot|*.svg|*.ttf|*.woff|*.woff2|*.otf)'
+    , dest: build
+    }
+  , dist: {
+      src: dist+'fonts/**/*'
+    , dest: dist+'/fonts'
+    }
+  },
+
   livereload: {
     port: 35729 // This is a standard port number that should be recognized by your LiveReload helper; there's probably no need to change it
   },
@@ -131,6 +142,7 @@ module.exports = {
       styles:       src+'scss/**/*.scss'
     , scripts:      src+'js/**/*.js' // You might also want to watch certain dependency trees but that's up to you
     , images:       src+'**/*(*.png|*.jpg|*.jpeg|*.gif|*.svg)'
+    , fonts:        src+'fonts/**/*'
     , theme:        src+'**/*.php'
     , livereload:   build+'**/*'
     }
