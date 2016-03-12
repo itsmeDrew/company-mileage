@@ -14,5 +14,15 @@
 }
 
 .site-branding {
-  @include col(4/12);
+  @include breakpointLargerThan($breakpoint--medium) {
+    @include col(4/12);
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    @include col(6/12);
+  }
+}
+
+.site-branding__logo  {
+  max-width: 100%;
 }

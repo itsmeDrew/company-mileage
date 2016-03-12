@@ -16,17 +16,15 @@
         <img class="site-branding__logo" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="" />
       </div>
       <div class="site-nav--wrapper">
-        <div class="site-login">
+        <div class="site-login hidden--sm">
           <a class="btn-primary site-login__btn" href="#">request demo</a>
           <a class="btn-secondary site-login__btn" href="#">login</a>
         </div>
 
         <!-- START NAV -->
         <nav class="site-nav">
-          <div class="site-nav__mobile">
-            <i class="fa fa-user"></i>
-          </div>
-          <ul class="site-nav__list">
+          <i class="fa fa-user hidden--lg"></i>
+          <ul class="site-nav__list hidden--sm">
             <?php
               $sitePages = array(
                 'depth'        => 2,

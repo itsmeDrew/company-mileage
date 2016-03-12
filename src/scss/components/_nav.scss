@@ -1,21 +1,18 @@
 // ==== NAVIGATION ==== //
 
 .site-nav--wrapper {
+  @include col(8/12);
 
+  text-align: right;
+  
   @include breakpointLargerThan($breakpoint--large) {
-    @include col(8/12);
 
-    text-align: right;
   }
 }
 
 .site-nav {
   display: inline-block;
   text-align: right;
-}
-
-.site-nav__list {
-  @include hidden--sm();
 }
 
 .site-nav__list li {
