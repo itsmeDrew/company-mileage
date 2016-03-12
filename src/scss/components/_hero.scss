@@ -1,0 +1,14 @@
+.jumbotron[role="hero"] {
+  background-color: $cm-blue;
+  text-align: center;
+}
+
+.jumbotron__heading {
+  color: $white;
+}
+
+.jumbotron p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: $white;
+}

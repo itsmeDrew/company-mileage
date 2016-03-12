@@ -1,44 +1,73 @@
 // ==== NAVIGATION ==== //
 
-.site-nav--wrapper {
-  @include col(8/12);
-
-  text-align: right;
-  
-  @include breakpointLargerThan($breakpoint--large) {
-
-  }
-}
-
-.site-nav {
-  display: inline-block;
-  text-align: right;
-}
-
-.site-nav__list li {
-  display: inline-block;
-}
-
-.site-nav__list a {
-  @include font-size(15px);
-
-
-  color: $cm-blue;
-  text-transform: capitalize;
-  padding: 1rem 2rem;
-}
-
-.site-nav__list a:hover {
-  color: darken($cm-blue, 20%);
-}
-
-.site-login {
+.navbar-default {
+  background: none;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  border-color: none;
+  border: none;
+  margin: 0;
   width: 100%;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $cm-blue;
+  text-shadow: none;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: darken($cm-blue, 15%);
+}
+
+.navbar-collapse {
+  border: none;
+  border-color: transparent;
+}
+
+.navbar-nav {
   float: right;
-  padding-bottom: .5rem;
+  padding: 1rem 0;
+}
+
+.navbar-top {
   text-align: right;
 }
 
-// mobile menu
+/*mobile menu*/
 
-// .menu-active nav
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $cm-blue;
+  height: 3px;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+/*navbar home*/
+
+.page-template-home .navbar-default {
+  position: absolute;
+  bottom: 0;
+  background: none;
+  z-index: 100;
+}

@@ -2,8 +2,8 @@
 
 .btn {
   @include borderRadius(3px);
-  @include font-size(14px);
 
+  font-size: 14px;
   display: inline-block;
   text-transform: capitalize;
 }

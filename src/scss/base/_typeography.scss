@@ -6,7 +6,7 @@ body {
 
 a {
   color: $cm-blue;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
