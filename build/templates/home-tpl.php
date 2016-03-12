@@ -15,6 +15,12 @@ get_header();
     <p class="jumbotron__desc">
       CompanyMileage provides companies with significant savings on mileage reimbursement by accurately verifying employee mileage & automating the reimbursement process. How much could your company save?
     </p>
+    <div class="savings-calculator">
+      <input type="text" name="name" placeholder="number of employees">
+      <input type="text" name="name" placeholder="miles driven per week">
+      <input type="text" name="name" placeholder="reimbursment rate">
+      <a class="btn-primary" href="#">calculate savings</a>
+    </div>
   </div>
 </div>
 
