@@ -2,7 +2,7 @@
 // about
 
 .about {
-  background: url('img/about-bg.png') center right #e4e4e4 no-repeat;
+  background: url('img/about-bg.png') center right $med-tan no-repeat;
   padding: $base-sec__padding + 20 0 $base-sec__padding 0;
 }
 
@@ -50,4 +50,35 @@
   margin-top: 1rem;
   padding: 1rem 3.5rem;
   color: $black;
+}
+
+// industries
+
+.industries {
+  background-image: url('img/us-map.png');
+  background-position: center right -400px;
+  background-color: $med-tan;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding: $base-sec__padding;
+}
+
+.industry-list__listing {
+  @include cf();
+  @include borderRadius(10px);
+
+  padding: 1rem;
+  margin: 2rem 0;
+  background: $tan;
+  border: 2px solid $dark-tan;
+}
+
+.industry-icon {
+  position: relative;
+  padding: 4rem 1rem;
+}
+
+.industry-list__content {
+  float: right;
+  width: 80%;
 }
