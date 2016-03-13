@@ -16,13 +16,16 @@ get_header();
       CompanyMileage provides companies with significant savings on mileage reimbursement by accurately verifying employee mileage & automating the reimbursement process. How much could your company save?
     </p>
     <div class="savings-calculator">
-      <input type="text" name="name" placeholder="number of employees">
-      <input type="text" name="name" placeholder="miles driven per week">
-      <input type="text" name="name" placeholder="reimbursment rate">
+      <input class="savings-calculator__input" type="text" name="name" placeholder="number of employees">
+      <input class="savings-calculator__input" type="text" name="name" placeholder="miles driven per week">
+      <input class="savings-calculator__input" type="text" name="name" placeholder="reimbursment rate">
       <a class="btn-primary" href="#">calculate savings</a>
+    </div>
+    <div class="">
     </div>
   </div>
 </div>
+
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
