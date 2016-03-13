@@ -6,12 +6,12 @@
   font-size: 14px;
   display: inline-block;
   text-transform: capitalize;
+  padding: 1rem 2.5rem;
 }
 
 .btn-primary {
   @extend .btn;
 
-  padding: 1rem 2.5rem;
   color: $white;
   background-color: $cm-orange;
 }
@@ -24,7 +24,6 @@
 .btn-secondary {
   @extend .btn;
 
-  padding: .5rem 2rem;
   color: $cm-blue;
   border: 1px solid #ededed;
 }

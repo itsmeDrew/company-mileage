@@ -2,11 +2,15 @@
 // about
 
 .about {
-  background: #e4e4e4;
-  padding: 25rem 0;
+  background: url('img/about-bg.png') center right #e4e4e4 no-repeat;
+  padding: $base-sec__padding + 20 0 $base-sec__padding 0;
 }
 
-.about__heading {
+.about-header {
+  margin-bottom: $base-sec__padding;
+}
+
+.about-header__heading {
   text-align: center;
 }
 
@@ -24,4 +28,26 @@
 
 .about-cases__img {
   width: 100%;
+}
+
+
+// solutions
+
+.solutions {
+  padding: $base-sec__padding;
+  text-align: center;
+}
+
+.solutions-header {
+  margin-bottom: $base-sec__padding;
+}
+
+.solutions__list-item {
+  text-align: center;
+}
+
+.solutions__btn {
+  margin-top: 1rem;
+  padding: 1rem 3.5rem;
+  color: $black;
 }
