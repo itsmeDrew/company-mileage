@@ -1,6 +1,8 @@
 .jumbotron[role="hero"] {
   background-color: $cm-blue;
   text-align: center;
+  position: relative;
+  padding: 10rem 0 25rem 0;
 }
 
 .jumbotron__heading {
@@ -11,4 +13,11 @@
   font-size: 16px;
   line-height: 1.5;
   color: $white;
+}
+
+.jumbotron__display {
+  bottom: 0;
+  left: 50%;
+  transform: translateY(50%) translateX(-50%);
+  position: absolute;
 }

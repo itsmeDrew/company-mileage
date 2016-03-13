@@ -21,7 +21,8 @@ get_header();
       <input class="savings-calculator__input" type="text" name="name" placeholder="reimbursment rate">
       <a class="btn-primary" href="#">calculate savings</a>
     </div>
-    <div class="">
+    <div class="jumbotron__display">
+      <img src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />
     </div>
   </div>
 </div>
