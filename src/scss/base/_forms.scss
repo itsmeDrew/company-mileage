@@ -1,1 +1,8 @@
 // ==== FORMS ==== //
+
+input {
+  @include borderRadius(5px);
+
+  border: 2px solid $dark-tan;
+  padding: 1rem 1.5rem;
+}

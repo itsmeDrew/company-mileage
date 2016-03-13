@@ -1,16 +1,9 @@
 .savings-calculator {
   @include borderRadius(5px);
 
-  background: #f8f8f8;
-  border: 2px solid #d6d6d6;
+  background: $tan;
+  border: 2px solid $dark-tan;
   width: 100%;
   padding: 2rem;
-  margin-bottom: 3rem; 
-}
-
-.savings-calculator__input {
-  @include borderRadius(5px);
-
-  border: 2px solid #d6d6d6;
-  padding: 1rem 1.5rem;
+  margin-bottom: 3rem;
 }

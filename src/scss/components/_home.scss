@@ -1,0 +1,27 @@
+
+// about
+
+.about {
+  background: #e4e4e4;
+  padding: 25rem 0;
+}
+
+.about__heading {
+  text-align: center;
+}
+
+.about-cases__list {
+  @include cf();
+
+  margin-top: 7rem;
+}
+
+.about-cases__list-item {
+  @include centerHorizontal();
+
+  position: relative;
+}
+
+.about-cases__img {
+  width: 100%;
+}

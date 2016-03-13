@@ -12,3 +12,14 @@ a {
 a:hover {
   color: lighten($cm-blue, 15%);
 }
+
+h1 {
+  font-family: $base-font-family--sans-serif;
+}
+
+h2 {
+  font-family: $base-font-family--sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+}
