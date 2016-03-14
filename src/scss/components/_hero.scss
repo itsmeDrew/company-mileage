@@ -6,8 +6,9 @@
   margin: 0;
 }
 
-.jumbotron__heading {
-  color: $white;
+.jumbotron h1 {
+  @extend h1;
+
 }
 
 .jumbotron p {

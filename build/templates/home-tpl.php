@@ -11,7 +11,7 @@ get_header();
 
 <div class="jumbotron" role="hero">
   <div class="container">
-    <h2 class="jumbotron__heading">Save 20-30% on Mileage COSTS</h2>
+    <h1 class="jumbotron__heading">Save 20-30% on Mileage COSTS</h1>
     <p class="jumbotron__desc">
       CompanyMileage provides companies with significant savings on mileage reimbursement by accurately verifying employee mileage & automating the reimbursement process. How much could your company save?
     </p>
@@ -26,9 +26,6 @@ get_header();
     </div>
   </div>
 </div>
-
-<!-- /// START ABOUT /// -->
-
 <div class="about">
   <div class="container">
     <header class="about-header">
@@ -66,11 +63,8 @@ get_header();
         </div>
       </div>
     </div>
-  </div> <!-- end container -->
+  </div>
 </div>
-
-<!-- /// END ABOUT /// -->
-
 <div class="solutions">
   <div class="container">
     <header class="solutions-header">
@@ -107,10 +101,10 @@ get_header();
     </ul>
   </div>
 </div>
-<div class="industries row">
+<div class="industries row-fluid">
   <div class="container">
     <div class="col-md-6">
-      <h2>test</h2>
+      <h2>Serving the Mobile Workforce Nationwide</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
@@ -127,7 +121,7 @@ get_header();
         <div class="industry-list__listing">
           <img class="industry-icon" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
           <div class="industry-list__content">
-            <h2>Healthcare & Family Services</h2>
+            <h2>Sales Representatives</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
@@ -136,7 +130,7 @@ get_header();
         <div class="industry-list__listing">
           <img class="industry-icon" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
           <div class="industry-list__content">
-            <h2>Healthcare & Family Services</h2>
+            <h2>Mobile Employees</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
@@ -144,6 +138,14 @@ get_header();
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="quote">
+  <div class="container">
+    <h1 class="quote__heading">What You Should Know About CompanyMileage</h1>
+    <p>
+      At CompanyMileage, we're passionate about designing the best mileage reimbursement software. Take a look at our blog to see our frequent updates, our product pages for more information or our Company page to get to know us a little better. If you’re looking for a quote, fill out the form below and a representative will contact you shortly.
+    </p>
   </div>
 </div>
 <?php get_footer(); ?>
