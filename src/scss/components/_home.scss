@@ -53,6 +53,10 @@
 
 .solutions__list-item {
   text-align: center;
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    padding: 2rem;
+  }
 }
 
 .solutions__btn {
