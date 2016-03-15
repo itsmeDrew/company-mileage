@@ -32,7 +32,15 @@
         </div>
         <div class="footer-bottom">
           <div class="container">
-
+            © 2016 CompanyMileage LLC
+          </div>
+          <div class="footer-social">
+            <a class="footer-social__link" href="#">
+              <i class="fa fa-twitter footer-social__icon"></i>
+            </a>
+            <a class="footer-social__link" href="#">
+              <i class="fa fa-facebook footer-social__icon"></i>
+            </a>
           </div>
         </div>
       </footer>

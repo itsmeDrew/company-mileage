@@ -1,5 +1,7 @@
 .site-footer {
   @extend .sec;
+
+  padding-bottom: 0;
 }
 
 .footer-top {
@@ -32,4 +34,34 @@
   font-size: 18px;
   display: block;
   line-height: 1.5;
+}
+
+// footer bottom
+
+.footer-bottom {
+  margin-top: 5rem;
+  background-color: $cm-blue;
+  padding: 4rem 0;
+  position: relative;
+  color: $white
+}
+
+.footer-social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: $cm-orange;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+
+.footer-social__icon {
+  font-size: 3rem;
+  color: $white;
+  padding: 0 1rem;
+}
+
+.footer-social__icon:hover {
+  color: $cm-blue;
 }
