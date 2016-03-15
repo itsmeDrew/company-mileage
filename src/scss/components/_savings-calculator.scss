@@ -7,3 +7,11 @@
   padding: 2rem;
   margin-bottom: 3rem;
 }
+
+.savings-calculator__input {
+  @include breakpointSmallerThan($breakpoint--medium) {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+  }
+}
