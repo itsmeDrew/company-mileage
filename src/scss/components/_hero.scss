@@ -2,8 +2,15 @@
   background-color: $cm-blue;
   text-align: center;
   position: relative;
-  padding: 10rem 0 25rem 0;
   margin: 0;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    padding: 10rem 0 25rem 0;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    padding: 10rem 0 15rem 0;
+  }
 }
 
 .jumbotron h1 {

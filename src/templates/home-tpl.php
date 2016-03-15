@@ -119,7 +119,7 @@ get_header();
           </div>
         </div>
         <div class="industry-list__listing">
-          <img class="industry-icon" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
+          <img class="industry-icon" src="<?php bloginfo('template_url'); ?>/img/ico-wallet.png" alt="ico-wallet" />
           <div class="industry-list__content">
             <h2>Sales Representatives</h2>
             <p>
