@@ -29,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- <a href="<?php echo get_permalink(10); ?>"><img class="navbar__logo" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="logo" /></a> -->
+          <a href="<?php echo get_permalink(10); ?>"><img class="navbar__logo" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="logo" /></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,7 +38,7 @@
             <div class="navbar-top">
               <span class="site-login__phone">Call (877) 677 0377</span>
               <a class="btn-primary site-login__btn" href="#">request demo</a>
-              <a class="btn-secondary site-login__btn" href="#">request demo</a>
+              <a class="btn-secondary site-login__btn" href="#">login</a>
             </div>
             <ul class="nav navbar-nav">
               <li class="page_item navbar-nav__cart">
