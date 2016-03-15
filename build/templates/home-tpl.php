@@ -148,7 +148,7 @@ get_header();
         At CompanyMileage, we're passionate about designing the best mileage reimbursement software. Take a look at our blog to see our frequent updates, our product pages for more information or our Company page to get to know us a little better. If you’re looking for a quote, fill out the form below and a representative will contact you shortly.
       </p>
     </div>
-    <div class="quote-request row">
+    <div class="quote-request row-fluid">
       <h4 class="quote-request__heading">get a quote</h4>
       <div class="quote-form">
         <div class="quote-form__input--wrapper col-md-6">

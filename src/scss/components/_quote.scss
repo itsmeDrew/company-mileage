@@ -1,5 +1,8 @@
 .quote-request {
   @extend .form-box;
+
+  width: 100%;
+  margin: 0;
 }
 
 .quote-form {

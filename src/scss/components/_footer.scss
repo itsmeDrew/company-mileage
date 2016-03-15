@@ -1,0 +1,35 @@
+.site-footer {
+  @extend .sec;
+}
+
+.footer-top {
+  @include cf();
+}
+
+.footer-blog {
+  text-align: left;
+}
+
+.footer-blog__heading {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-blog__list-item {
+  margin: 2rem 0;
+}
+
+.company-info {
+  margin-top: 1rem;
+}
+
+.company-info__company {
+  font-weight: bold;
+}
+
+.company-info span {
+  font-size: 18px;
+  display: block;
+  line-height: 1.5;
+}

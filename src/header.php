@@ -62,4 +62,4 @@
     </nav>
 
   </header>
-<div id="wrap-main" class="wrap-main">
+<div class="site-content">
