@@ -27,6 +27,11 @@
   @include centerHorizontal();
 
   position: relative;
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    display: inline-block;
+    width: 49%;
+  }
 }
 
 .about-cases__img {
