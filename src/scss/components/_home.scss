@@ -1,9 +1,12 @@
+.sec {
+  padding: $base-sec__padding;
+}
 
 // about
 
 .about {
   background: url('img/about-bg.png') center right $med-tan no-repeat;
-  padding: $base-sec__padding + 20 0 $base-sec__padding 0;
+  padding: 26rem 0 6rem 0;
 }
 
 .about-header {
@@ -34,7 +37,8 @@
 // solutions
 
 .solutions {
-  padding: $base-sec__padding;
+  @extend .sec;
+
   text-align: center;
 }
 
@@ -55,12 +59,17 @@
 // industries
 
 .industries {
-  background-image: url('img/us-map.png');
-  background-position: center right -400px;
+  @extend .sec;
+
   background-color: $med-tan;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  padding: $base-sec__padding;
+
+
+  @include breakpointLargerThan($breakpoint--large) {
+    background-image: url('img/us-map.png');
+    background-position: center right -400px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 .industry-list__listing {
@@ -83,9 +92,24 @@
   width: 80%;
 }
 
-// quote
+// contact
 
-.quote {
-  background: $sky;
+.contact {
+  @extend .sec;
+
+  background-image: url('img/contact-bg.png');
+  background-color: $sky;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  padding-bottom: 10rem;
   text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 5rem;
+}
+
+.contact-header__desc {
+  color: $white;
 }

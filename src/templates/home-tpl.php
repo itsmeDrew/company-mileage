@@ -21,8 +21,8 @@ get_header();
       <input class="savings-calculator__input" type="text" name="name" placeholder="reimbursment rate">
       <a class="btn-primary" href="#">calculate savings</a>
     </div>
-    <div class="jumbotron__display">
-      <img src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />
+    <div class="jumbotron-display">
+      <img class="jumbotron-display__img" src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />
     </div>
   </div>
 </div>
@@ -52,7 +52,7 @@ get_header();
       </p>
     </div>
     <div class="about-demo col-md-6">
-      <div class="demo">
+      <div class="demo-request">
         <h2 class="demo__heading">View a Demo</h2>
         <p class="demo__p">
           In just 2 minutes, you can see how easily CompanyMileage can automate your mileage reimbursement processes.
@@ -140,12 +140,32 @@ get_header();
     </div>
   </div>
 </div>
-<div class="quote">
+<div class="contact">
   <div class="container">
-    <h1 class="quote__heading">What You Should Know About CompanyMileage</h1>
-    <p>
-      At CompanyMileage, we're passionate about designing the best mileage reimbursement software. Take a look at our blog to see our frequent updates, our product pages for more information or our Company page to get to know us a little better. If you’re looking for a quote, fill out the form below and a representative will contact you shortly.
-    </p>
+    <div class="contact-header">
+      <h1 class="contact-header__heading">What You Should Know About CompanyMileage</h1>
+      <p class="contact-header__desc">
+        At CompanyMileage, we're passionate about designing the best mileage reimbursement software. Take a look at our blog to see our frequent updates, our product pages for more information or our Company page to get to know us a little better. If you’re looking for a quote, fill out the form below and a representative will contact you shortly.
+      </p>
+    </div>
+    <div class="quote-request row">
+      <h4 class="quote-request__heading">get a quote</h4>
+      <div class="quote-form">
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+      </div>
+      <a class="btn-primary" href="#">submit</a>
+    </div>
   </div>
 </div>
 <?php get_footer(); ?>

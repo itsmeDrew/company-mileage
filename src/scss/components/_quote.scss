@@ -1,0 +1,17 @@
+.quote-request {
+  @extend .form-box;
+}
+
+.quote-form {
+  @include cf();
+
+  margin: 1rem 0;
+}
+
+.quote-form__input--wrapper {
+  padding: 1rem;
+}
+
+.quote-form__input {
+  width: 100%;
+}

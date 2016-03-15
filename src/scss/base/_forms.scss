@@ -6,3 +6,12 @@ input {
   border: 2px solid $dark-tan;
   padding: 1rem 1.5rem;
 }
+
+.form-box {
+  @include cf();
+  @include borderRadius(10px);
+
+  background: $tan;
+  border: 2px solid $dark-tan;
+  padding: 2rem;
+}

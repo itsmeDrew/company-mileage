@@ -1,10 +1,5 @@
-.demo {
-  @include cf();
-  @include borderRadius(10px);
-
-  background: $tan;
-  border: 2px solid $dark-tan;
-  padding: 2rem;
+.demo-request {
+  @extend .form-box;
 }
 
 .demo__heading {

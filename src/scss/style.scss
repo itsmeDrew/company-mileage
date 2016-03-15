@@ -6,6 +6,9 @@ $fa-font-path: "fonts" !default;
 // Scut, a Sass utilities library: https://davidtheclark.github.io/scut/
 @import "scut/dist/scut";
 
+// VENDOR
+@import 'jeet/scss/jeet/index';
+
 // CORE
 @import "core/mixins";
 @import "core/colors";
@@ -27,6 +30,7 @@ Domain Path: #{metadata(theme-text-domain-path)}
 
 // BASE
 @import 'base/normalize';
+@import 'base/layout';
 @import 'base/buttons';
 @import 'base/fonts';
 @import 'base/forms';
@@ -35,9 +39,6 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import 'base/normalize';
 @import 'base/typeography';
 
-// VENDOR
-@import 'jeet/scss/jeet/index';
-
 // COMPONENTS
 @import 'components/header';
 @import 'components/nav';
@@ -45,3 +46,4 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import 'components/savings-calculator';
 @import 'components/home';
 @import 'components/demo';
+@import 'components/quote';
