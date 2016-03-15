@@ -39,12 +39,25 @@
 }
 
 .navbar-nav {
-  float: right;
   padding: 1rem 0;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    float: right;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    text-align: center;
+  }
 }
 
 .navbar-top {
-  text-align: right;
+  @include breakpointLargerThan($breakpoint--medium) {
+    text-align: right;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    text-align: center;
+  }
 }
 
 /*mobile menu*/
@@ -70,4 +83,16 @@
   bottom: 0;
   background: none;
   z-index: 100;
+}
+
+.site-login__btn {
+  @include breakpointSmallerThan($breakpoint--medium) {
+    margin: 1rem 0;
+  }
+}
+
+.site-login__phone {
+  @include breakpointSmallerThan($breakpoint--medium) {
+    display: block;
+  }
 }
