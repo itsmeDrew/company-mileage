@@ -30,3 +30,12 @@
   margin-top: 0;
   text-transform: capitalize;
 }
+
+
+// SOLUTIONS
+
+.solution-features {
+  @extend .sec;
+
+  background: $grey;
+}
