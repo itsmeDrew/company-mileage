@@ -1,0 +1,32 @@
+// ABOUT
+
+.solution-about {
+  padding: 4rem 0;
+  background-color: $grey;
+}
+
+
+// BENEFITS
+
+.benefits {
+  @extend .sec;
+}
+
+.benefits-header {
+  text-align: center;
+}
+
+.benefits-list {
+  text-align: center;
+}
+
+.benefits-list__icon {
+  padding: $base-sec__padding;
+  color: $cm-blue;
+  font-size: 120px;
+}
+
+.benefits-list__heading {
+  margin-top: 0;
+  text-transform: capitalize;
+}

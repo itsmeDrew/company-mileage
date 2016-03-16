@@ -45,7 +45,7 @@
                 <ul class="nav navbar-nav">
                   <?php
                     $sitePages = array(
-                      'depth'        => 2,
+                      'depth'        => 1,
                       'exclude'      => '',
                       'post_status'  => 'publish',
                       'sort_column'  => 'menu_order',
