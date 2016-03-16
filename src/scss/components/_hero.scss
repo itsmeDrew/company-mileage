@@ -1,8 +1,8 @@
-.jumbotron[role="hero"] {
-  background-color: $cm-blue;
+.jumbotron {
   text-align: center;
   position: relative;
   margin: 0;
+  background-color: $cm-blue;
 
   @include breakpointLargerThan($breakpoint--medium) {
     padding: 10rem 0 25rem 0;
@@ -18,21 +18,45 @@
 
 }
 
+.jumbotron-display {
+  width: 80%;
+  max-width: 600px;
+  bottom: 0;
+}
+
+.jumbotron-display__img {
+  width: 100%;
+}
+
 .jumbotron p {
   font-size: 16px;
   line-height: 1.5;
   color: $white;
 }
 
-.jumbotron-display {
-  width: 80%;
-  max-width: 600px;
-  bottom: 0;
+// HOME
+
+.home .jumbotron {
+  @extend .jumbotron;
+}
+
+.home .jumbotron-display {
+  position: absolute;
   left: 50%;
   transform: translateY(50%) translateX(-50%);
-  position: absolute;
+
 }
 
 .jumbotron-display__img {
   width: 100%;
+}
+
+// SOLUTION
+
+.page-id-13 .jumbotron {
+  padding-bottom: 0;
+}
+
+.page-id-13 .jumbotron-display {
+  margin: 0 auto;
 }
