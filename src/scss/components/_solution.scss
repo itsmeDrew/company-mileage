@@ -39,3 +39,39 @@
 
   background: $grey;
 }
+
+// PROCESS
+
+.process {
+  @extend .sec;
+}
+
+.reimbursement-list {
+  @include cf();
+
+  margin: 4rem 0;
+}
+
+.reimbursement-list__icon {
+  @include borderRadius(99px);
+
+  padding: 10px 16px;
+  // width: 15px;
+  // height: 15px;
+  color: $white;
+  background-color: $cm-blue;
+  display: inline-block;
+  float: left;
+}
+
+.reimbursement-display {
+  @include breakpointLargerThan($breakpoint--medium) {
+    position: relative;
+    transform: translateY(50%);
+    top: -50%;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    text-align: center;
+  }
+}

@@ -111,4 +111,49 @@ get_header();
     </div>
   </div>
 </div>
+<div class="process">
+  <div class="container">
+    <div class="process-content col-md-6">
+      <h2>The Reimbursement Process: Simplified.</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      </p>
+      <ul class="reimbursement-list">
+        <li class="reimbursement-list__list-item row-fluid">
+          <div class="reimbursement-list__icon--wrapper col-sm-2">
+            <div class="reimbursement-list__icon" style="background-color: #ef7f39">
+              1
+            </div>
+          </div>
+          <p class="col-xs-10 col-sm-10">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+        </li>
+        <li class="reimbursement-list__list-item row-fluid">
+          <div class="reimbursement-list__icon--wrapper col-sm-2">
+            <div class="reimbursement-list__icon" style="background-color: #5eaad4">
+              2
+            </div>
+          </div>
+          <p class="col-xs-10 col-sm-10">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+        </li>
+        <li class="reimbursement-list__list-item row-fluid">
+          <div class="reimbursement-list__icon--wrapper col-sm-2">
+            <div class="reimbursement-list__icon" style="background-color: #3483bb">
+              3
+            </div>
+          </div>
+          <p class="col-xs-10 col-sm-10">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="reimbursement-display col-md-6">
+      <img class="reimbursement-display__img" src="<?php bloginfo('template_url'); ?>/img/reimbursement.png" alt="reimbursement" />
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>
