@@ -87,3 +87,40 @@
 .onboarding-header {
   text-align: center;
 }
+
+.onboarding-process__step {
+  @include cf();
+
+  height: 140px;
+  margin: 3rem 0;
+}
+
+.onboarding-process__icon {
+  @include centerHorizontal();
+
+  position: relative;
+  float: left;
+  width: 10%;
+  padding: .3rem;
+}
+
+.onboarding-process__step-content {
+  float: left;
+  width: 90%;
+  height: 140px;
+}
+
+.onboarding-process__heading {
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+.onboarding-process__step-content {
+  @extend .form-box;
+
+  // padding: 2rem;
+}
+
+.onboarding-process__step-content p {
+  font-size: 14px;
+}

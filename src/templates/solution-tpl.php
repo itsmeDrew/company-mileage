@@ -166,6 +166,57 @@ get_header();
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
       </p>
     </header>
+    <div class="onboarding-process row-fluid">
+      <div class="col-md-6">
+        <div class="onboarding-process__step">
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <div class="onboarding-process__step-content">
+            <h2 class="onboarding-process__heading">1. setup employees</h2>
+            <p>
+              Simply export an employee file from your payroll or accounting system and we do the rest. Our staff will import the employees into our system.
+            </p>
+          </div>
+        </div>
+        <div class="onboarding-process__step">
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <div class="onboarding-process__step-content">
+            <h2 class="onboarding-process__heading">2. address books</h2>
+            <p>
+              Export the master client list for each location. We will import them into our software for access by the appropriate employee in each division.
+            </p>
+          </div>
+        </div>
+        <div class="onboarding-process__step">
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <div class="onboarding-process__step-content">
+            <h2 class="onboarding-process__heading">3. Testing</h2>
+            <p>
+              Once the initial setup in complete, we will validate the addresses to ensure accurate mapping.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="onboarding-process__step">
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <div class="onboarding-process__step-content">
+            <h2 class="onboarding-process__heading">3. Testing</h2>
+            <p>
+              Once the initial setup in complete, we will validate the addresses to ensure accurate mapping.
+            </p>
+          </div>
+        </div>
+        <div class="onboarding-process__step">
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <div class="onboarding-process__step-content">
+            <h2 class="onboarding-process__heading">1. setup employees</h2>
+            <p>
+              Simply export an employee file from your payroll or accounting system and we do the rest. Our staff will import the employees into our system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <?php get_footer(); ?>
