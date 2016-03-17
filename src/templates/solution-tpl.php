@@ -12,10 +12,12 @@ get_header();
 <div class="jumbotron">
   <div class="container">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <h1 class="jumbotron__heading"><?php the_title(); ?></h1>
-    <p class="jumbotron__desc">
-      <?php the_content(); ?>
-    </p>
+    <div class="jumbotron-header">
+      <h1 class="jumbotron-header__heading"><?php the_title(); ?></h1>
+      <p class="jumbotron-header__desc">
+        <?php the_content(); ?>
+      </p>
+    </div>
     <div class="jumbotron-display">
       <img class="jumbotron-display__img" src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />
     </div>
@@ -154,6 +156,16 @@ get_header();
     <div class="reimbursement-display col-md-6">
       <img class="reimbursement-display__img" src="<?php bloginfo('template_url'); ?>/img/reimbursement.png" alt="reimbursement" />
     </div>
+  </div>
+</div>
+<div class="onboarding">
+  <div class="container">
+    <header class="onboarding-header">
+      <h2 class="onboarding-header__heading">We Make Onboarding Easy.</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+      </p>
+    </header>
   </div>
 </div>
 <?php get_footer(); ?>

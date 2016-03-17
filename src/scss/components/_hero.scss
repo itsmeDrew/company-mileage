@@ -13,9 +13,14 @@
   }
 }
 
+.jumbotron-header {
+  margin-bottom: 5rem;
+}
+
 .jumbotron h1 {
   @extend h1;
 
+  margin: 0;
 }
 
 .jumbotron-display {

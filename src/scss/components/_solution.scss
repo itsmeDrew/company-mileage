@@ -65,13 +65,25 @@
 }
 
 .reimbursement-display {
-  @include breakpointLargerThan($breakpoint--medium) {
+  @include breakpointLargerThan($breakpoint--large) {
     position: relative;
     transform: translateY(50%);
     top: -50%;
   }
 
-  @include breakpointSmallerThan($breakpoint--medium) {
+  @include breakpointSmallerThan($breakpoint--large) {
     text-align: center;
   }
+}
+
+// ONBOARDING
+
+.onboarding {
+  @extend .sec;
+
+  background-color: $grey;
+}
+
+.onboarding-header {
+  text-align: center;
 }
