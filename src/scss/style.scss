@@ -1,7 +1,7 @@
 // ==== STYLES ==== //
 
-$slick-font-path: "../fonts/";
-$fa-font-path: "fonts" !default;
+$slick-font-path: "fonts/";
+$fa-font-path: "fonts/" !default;
 
 @import '../../../node_modules/font-awesome/scss/font-awesome';
 @import '../../../node_modules/slick-carousel/slick/slick.scss';
@@ -52,4 +52,5 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import 'components/demo';
 @import 'components/quote';
 @import 'components/solution';
+@import 'components/sliders';
 @import 'components/footer';

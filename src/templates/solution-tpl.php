@@ -78,19 +78,34 @@ get_header();
   <div class="container">
     <div class="feature-slider">
       <div class="feature-slider__slides js-feature-slider__slides col-md-6">
-        <div>
-          <h3>one</h3>
+        <div class="feature-slider__slide">
+          <img class="feature-slider__slide-img" src="http://lorempixel.com/450/350/" alt="slide-img" />
         </div>
-        <div>
-          <h3>two</h3>
+        <div class="feature-slider__slide">
+          <img class="feature-slider__slide-img" src="http://lorempixel.com/450/351/" alt="slide-img" />
+        </div>
+        <div class="feature-slider__slide">
+          <img class="feature-slider__slide-img" src="http://lorempixel.com/450/352/" alt="slide-img" />
         </div>
       </div>
       <div class="feature-slider__controls js-feature-slider__nav col-md-6">
-        <div>
-          <h3>one</h3>
+        <div class="feature-slider__control">
+          <h2 class="feature-slider__heading">Title goes here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
         </div>
-        <div>
-          <h3>two</h3>
+        <div class="feature-slider__control">
+          <h2 class="feature-slider__heading">Title goes here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="feature-slider__control">
+          <h2 class="feature-slider__heading">Title goes here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
         </div>
       </div>
     </div>
