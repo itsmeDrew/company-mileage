@@ -5,3 +5,11 @@ body {
 .container {
   max-width: $container;
 }
+
+.sec {
+  padding: $base-sec__padding;
+
+  header > h2 {
+    margin-bottom: 4rem;
+  }
+}
