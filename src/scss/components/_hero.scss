@@ -3,24 +3,14 @@
   position: relative;
   margin: 0;
   background-color: $cm-blue;
-
-  @include breakpointLargerThan($breakpoint--medium) {
-    padding: 10rem 0 25rem 0;
-  }
-
-  @include breakpointSmallerThan($breakpoint--medium) {
-    padding: 10rem 0 15rem 0;
-  }
 }
 
-.jumbotron-header {
+.jumbotron__heading {
   margin-bottom: 5rem;
 }
 
 .jumbotron h1 {
   @extend h1;
-
-  margin: 0;
 }
 
 .jumbotron-display {
@@ -43,6 +33,14 @@
 
 .home .jumbotron {
   @extend .jumbotron;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    padding: 10rem 0 25rem 0;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    padding: 10rem 0 15rem 0;
+  }
 }
 
 .home .jumbotron-display {
@@ -64,4 +62,21 @@
 
 .page-id-13 .jumbotron-display {
   margin: 0 auto;
+}
+
+// COMPANY
+
+.page-id-17 .jumbotron {
+  background: url('img/hero-company.jpg');
+  background-size: 100% auto;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    padding: 10rem 0;
+  }
+}
+
+.page-id-17 .jumbotron__container {
+  @include breakpointLargerThan($breakpoint--medium) {
+    width: 900px;
+  }
 }

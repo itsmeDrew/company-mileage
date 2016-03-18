@@ -9,7 +9,11 @@ body {
 .sec {
   padding: $base-sec__padding;
 
+  header {
+    margin-bottom: 3rem;
+  }
+
   header > h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 }
