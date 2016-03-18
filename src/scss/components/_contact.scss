@@ -1,0 +1,21 @@
+// contact
+
+.contact {
+  @extend .sec;
+
+  background-image: url('img/contact-bg.png');
+  background-color: $sky;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 5rem;
+}
+
+.contact-header__desc {
+  color: $white;
+}
