@@ -228,4 +228,32 @@ get_header();
     </div>
   </div>
 </div>
+<div class="contact">
+  <div class="container">
+    <div class="contact-header">
+      <h1 class="contact-header__heading">see how it works</h1>
+      <p class="contact-header__desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. at nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="quote-request row-fluid">
+      <h4 class="quote-request__heading">get a quote</h4>
+      <div class="quote-form">
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+        <div class="quote-form__input--wrapper col-md-6">
+          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
+        </div>
+      </div>
+      <a class="btn-primary" href="#">submit</a>
+    </div>
+  </div>
+</div>
 <?php get_footer(); ?>
