@@ -178,7 +178,7 @@ get_header();
           </div>
         </div>
         <div class="onboarding-process__step">
-          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-book.png" alt="ico" />
           <div class="onboarding-process__step-content">
             <h2 class="onboarding-process__heading">2. address books</h2>
             <p>
@@ -187,7 +187,7 @@ get_header();
           </div>
         </div>
         <div class="onboarding-process__step">
-          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-search.png" alt="ico" />
           <div class="onboarding-process__step-content">
             <h2 class="onboarding-process__heading">3. Testing</h2>
             <p>
@@ -198,20 +198,29 @@ get_header();
       </div>
       <div class="col-md-6">
         <div class="onboarding-process__step">
-          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-chat.png" alt="ico" />
           <div class="onboarding-process__step-content">
-            <h2 class="onboarding-process__heading">3. Testing</h2>
+            <h2 class="onboarding-process__heading">4. Training</h2>
             <p>
-              Once the initial setup in complete, we will validate the addresses to ensure accurate mapping.
+              After setup and testing we will train your Administrators & Supervisors.
             </p>
           </div>
         </div>
         <div class="onboarding-process__step">
-          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-user.png" alt="ico" />
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-plug.png" alt="ico" />
           <div class="onboarding-process__step-content">
-            <h2 class="onboarding-process__heading">1. setup employees</h2>
+            <h2 class="onboarding-process__heading">5. Accounting Integration</h2>
             <p>
-              Simply export an employee file from your payroll or accounting system and we do the rest. Our staff will import the employees into our system.
+              Working with your Accounting and Payroll Teams we will build the custom integration to your accounting and payment solutions.
+            </p>
+          </div>
+        </div>
+        <div class="onboarding-process__step">
+          <img class="onboarding-process__icon hidden--md" src="<?php bloginfo('template_url'); ?>/img/ico-onboarding-fireworks.png" alt="ico" />
+          <div class="onboarding-process__step-content">
+            <h2 class="onboarding-process__heading">6. That's It!</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum metus felis, nec tincidunt est euismod ultricies.
             </p>
           </div>
         </div>
