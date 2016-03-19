@@ -1,0 +1,27 @@
+////////////////////////
+// COMPONENT / SUBHEAD
+////////////////////////
+
+.subhead {
+  background-color: $grey;
+}
+
+.subhead-header {
+}
+
+.subhead__ico {
+  font-size: 36px;
+  display: inline-block;
+  color: $cm-blue;
+  margin-right: 1rem;
+}
+
+.subhead__heading {
+  color: $cm-blue;
+  display: inline-block;
+}
+
+.subhead-social {
+  padding: 3rem 0;
+  text-align: right;
+}

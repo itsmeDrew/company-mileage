@@ -11,6 +11,19 @@ get_header();
 
 <?php $queryBlog = new WP_Query(array( 'posts_per_page' => 5)); ?>
 <?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
+<div class="subhead row">
+  <div class="container">
+    <div class="subhead-header col-md-6">
+      <i class="subhead__ico fa fa-rss"></i>
+      <h1 class="subhead__heading">news & updates</h1>
+    </div>
+    <div class="subhead-social col-md-6">
+      <i class="subhead__ico fa fa-facebook-square"></i>
+      <i class="subhead__ico fa fa-twitter-square"></i>
+      <i class="subhead__ico fa fa-linkedin-square"></i>
+    </div>
+  </div>
+</div>
 
 <div class="blog row">
   <div class="container">
