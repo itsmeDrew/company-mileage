@@ -9,8 +9,6 @@
 get_header();
 ?>
 
-<?php $queryBlog = new WP_Query(array( 'posts_per_page' => 5)); ?>
-<?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
 <div class="subhead row">
   <div class="container">
     <div class="subhead-header col-md-6">
@@ -24,6 +22,9 @@ get_header();
     </div>
   </div>
 </div>
+
+<?php $queryBlog = new WP_Query(array( 'posts_per_page' => 5)); ?>
+<?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
 
 <div class="blog row">
   <div class="container">
