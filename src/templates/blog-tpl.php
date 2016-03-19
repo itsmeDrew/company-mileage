@@ -22,13 +22,11 @@ get_header();
     </div>
   </div>
 </div>
-
-<?php $queryBlog = new WP_Query(array( 'posts_per_page' => 5)); ?>
-<?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
-
 <div class="blog row">
   <div class="container">
     <div class="blog-list col-md-8">
+      <?php $queryBlog = new WP_Query(array( 'posts_per_page' => 5)); ?>
+      <?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
       <div class="blog-listing">
         <div class="blog-listing__header">
           <h2 class="blog-listing__heading"><a href="<?php echo the_permalink();?>"><?php the_title(); ?></a></h2>
@@ -46,15 +44,13 @@ get_header();
           <?php the_excerpt(); ?>
         </p>
       </div>
-    </div>
+      <?php endwhile; endif; wp_reset_postdata(); ?>
 
+    </div>
     <div class="blog-sidebar col-md-4">
       <?php get_sidebar(); ?>
     </div>
   </div>
 </div>
-
-
-<?php endwhile; endif; wp_reset_postdata(); ?>
 
 <?php get_footer(); ?>
