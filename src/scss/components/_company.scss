@@ -21,6 +21,18 @@
   // margin-bottom: 1rem;
 }
 
+.team-member {
+  margin: 4rem 0;
+}
+
+.team-member__header {
+  margin-bottom: 2rem;
+
+  h2 {
+    margin: 0;
+  }
+}
+
 .team-member__img--wrapper {
   @include borderRadius(99px);
 

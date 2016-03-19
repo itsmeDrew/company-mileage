@@ -19,3 +19,16 @@
 .contact-header__desc {
   color: $white;
 }
+
+
+// contact {company page}
+
+.page-id-17 .contact {
+  background-repeat: repeat-y;
+
+  .quote-form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
