@@ -23,13 +23,14 @@ get_header();
         <div class="blog-listing__img-wrapper">
           <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array(1200, 350) ); ?>
           <?php if ($thumbnail[0]) : ?>
-          <img class="blog-list__image" src="<?php echo $thumbnail[0]; ?>" alt="<?php echo the_title(); ?>" />
+          <a href="<?php echo get_permalink(); ?>">
+            <img class="blog-list__image" src="<?php echo $thumbnail[0]; ?>" alt="<?php echo the_title(); ?>" />
+          </a>
           <?php endif; ?>
         </div>
         <p class="blog-list__excerpt">
           <?php the_excerpt(); ?>
         </p>
-        <a class="btn-primary" href="<?php echo get_permalink(); ?>">read more</a>
       </div>
     </div>
 

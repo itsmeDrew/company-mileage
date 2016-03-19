@@ -6,6 +6,16 @@
   @extend .sec;
 }
 
+.blog-list {
+  .link--read-more {
+    @extend .btn-primary;
+
+    display: block;
+    text-align: center;
+    margin: 2rem 0;
+  }
+}
+
 .blog-list__listing {
   margin-bottom: 8rem;
 }
