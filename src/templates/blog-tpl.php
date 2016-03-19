@@ -48,7 +48,7 @@ get_header();
 
     </div>
     <div class="blog-sidebar col-md-4">
-      <?php get_sidebar(); ?>
+      <?php get_sidebar('blog'); ?>
     </div>
   </div>
 </div>

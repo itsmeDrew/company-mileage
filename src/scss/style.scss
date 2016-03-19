@@ -40,7 +40,6 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import 'base/forms';
 @import 'base/helpers';
 @import 'base/lists';
-@import 'base/normalize';
 @import 'base/typeography';
 
 // COMPONENTS
@@ -57,4 +56,5 @@ Domain Path: #{metadata(theme-text-domain-path)}
 @import 'components/company';
 @import 'components/blog';
 @import 'components/subhead';
+@import 'components/sidebar';
 @import 'components/footer';
