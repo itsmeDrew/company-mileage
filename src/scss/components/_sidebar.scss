@@ -1,0 +1,52 @@
+////////////////////////
+// PAGE / COMPANY
+////////////////////////
+
+.sidebar {
+  @include borderRadius(5px);
+
+  background: $grey;
+  padding: 2rem;
+}
+
+.sidebar-heading {
+  margin: 0 10px 0 0;
+}
+
+.sidebar-form {
+  padding: 2rem 0;
+}
+
+.sidebar-form__input {
+  width: 100%;
+  // display: block;
+}
+
+.sidebar-form__btn {
+  display: block;
+  text-align: center;
+}
+
+.sidebar-widget {
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
+// sidebar list
+
+.sidebar-list {
+  li {
+    border-bottom: 1px solid $black;
+    display: block;
+    padding: .5rem 0;
+    text-transform: capitalize;
+  }
+}
+
+// blog
+
+.sidebar-blog {
+  @extend .sidebar;
+
+}
