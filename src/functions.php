@@ -51,3 +51,40 @@ function voidx_widgets_init() {
   ) );
 }
 add_action( 'widgets_init', 'voidx_widgets_init' );
+
+add_theme_support( 'post-thumbnails' );
+
+//the excerpt revised
+
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+
+function new_excerpt_more($more) {
+       global $post;
+	return '... <a href="' . get_permalink($post->ID) . '" class="link--read-more">Read More</a>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function alter_comment_form_fields($fields){
+		$comment_notes_before = '';
+		$fields['author'] = '<p class="comment-form-author">' . ( $req ? '<span class="required">*</span>' : '' ) .
+			'<input id="author" name="author" type="text" placeholder="Your Name*" size="30"' . $aria_req . ' /></p>';
+		$fields['email'] = '<p class="comment-form-email">' . ( $req ? '<span class="required">*</span>' : '' ) .
+		  '<input id="email" name="email" type="email" placeholder="Your Email*" size="30"' . $aria_req . ' /></p>';
+		$fields['url'] = '<p class="comment-form-url">' . ( $req ? '<span class="required">*</span>' : '' ) .
+		  '<input id="url" name="url" type="url" placeholder="Have a Website?" size="30"' . $aria_req . ' /></p>';
+  return $fields;
+}
+
+add_filter('comment_form_default_fields','alter_comment_form_fields');
+
+function my_update_comment_field($comment_field) {
+	$comment_field = '<p class="comment-form-comment"><textarea id="comments" name="comment" cols="45" rows="8" aria-required="true" required="required" placeholder="Your Comment Here*" value=""></textarea></p>';
+	return $comment_field;
+}
+add_filter('comment_form_field_comment','my_update_comment_field');
+
+/* comments title */

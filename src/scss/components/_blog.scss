@@ -1,0 +1,34 @@
+////////////////////////
+// PAGE / BLOG
+////////////////////////
+
+.blog {
+  @extend .sec;
+}
+
+.blog-list__listing {
+  margin-bottom: 8rem;
+}
+
+.blog-listing__heading {
+  font-size: 33px;
+  margin: 0;
+}
+
+.blog-list__image {
+  width: 100%;
+}
+
+.blog-list__content {
+  padding-bottom: 5rem;
+}
+
+.blog-list__content .link--read-more {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+}
+
+.blog-list__excerpt {
+  margin: 1rem 0;
+}
