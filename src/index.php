@@ -11,7 +11,7 @@
       <?php if ($thumbnail[0]) : ?>
 
       <div class="post-header">
-        <h2><?php the_title(); ?></h2>
+        <h2 class="post-title"><?php the_title(); ?></h2>
         <img class="blog-posting__featured-img" src="<?php echo $thumbnail[0]; ?>" alt="blog-post-img" />
       </div>
       <div class="post-content">

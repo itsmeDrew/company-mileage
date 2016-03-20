@@ -1,6 +1,6 @@
       </div>
       <footer class="site-footer row-fluid">
-
+        <?php if ( ! is_single() ) { ?>
         <div class="footer-top">
           <div class="container">
             <div class="company col-sm-6">
@@ -30,6 +30,8 @@
             </div>
           </div>
         </div>
+        <?php /* END IF */ } ?>
+
         <div class="footer-bottom">
           <div class="container">
             © 2016 CompanyMileage LLC
