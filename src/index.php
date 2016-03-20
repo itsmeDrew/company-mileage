@@ -17,6 +17,20 @@
       <div class="post-content">
         <?php the_content(); ?>
       </div>
+      <div class="post-demo">
+        <div class="demo-request row">
+          <div class="demo-header col-sm-6">
+            <h2 class="demo__heading">Watch a 2 Minute Demo of CompanyMilage</h2>
+            <p class="demo__p">
+              Find out more about SureMileage and other CompanyMileage products by watching a two-minute demo.
+            </p>
+          </div>
+          <div class="demo-form col-sm-6">
+            <input class="demo-form__input" type="text" name="email" placeholder="Your Email Address">
+            <a class="demo-form__btn btn-primary" href="#">watch demo</a>
+          </div>
+        </div>
+      </div>
 
       <?php endif; ?>
       <?php endwhile; endif; wp_reset_postdata(); ?>
