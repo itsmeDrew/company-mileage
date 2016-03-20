@@ -3,13 +3,14 @@
 ////////////////////////
 
 .site-footer {
-  @extend .sec;
-
   padding-bottom: 0;
 }
 
 .footer-top {
   @include cf();
+  @extend .sec;
+
+  padding-bottom: 0;
 }
 
 .footer-blog {
