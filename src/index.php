@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<div class="blog-posting row">
-  <div class="container">
+<div class="blog-posting container">
+  <div class="row">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <div class="col-sm-4">
@@ -11,7 +11,7 @@
       <?php if ($thumbnail[0]) : ?>
 
       <h2><?php the_title(); ?></h2>
-
+      <img class="blog-posting__featured-img" src="<?php echo $thumbnail[0]; ?>" alt="blog-post-img" />
       <?php endif; ?>
       <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
