@@ -8,7 +8,7 @@
  */
 get_header();
 ?>
-<?php include(TEMPLATEPATH . '/subhead.php'); ?>
+
 <div class="jumbotron">
   <div class="container">
     <h1 class="jumbotron__heading">Save 20-30% on Mileage COSTS</h1>
