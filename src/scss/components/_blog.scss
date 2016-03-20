@@ -45,6 +45,10 @@
 
 // blog posts
 
+.blog-posting {
+  @extend .sec;
+}
+
 .post-title {
   text-transform: uppercase;
   margin: 0;

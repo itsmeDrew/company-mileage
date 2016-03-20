@@ -1,4 +1,16 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Displays single posts
+ *
+ * @package Company Mileage
+ * @subpackage company-mileage
+ * @since Company Mileage 1.0.1
+ */
+get_header();
+?>
+
+<?php include(TEMPLATEPATH . '/subhead.php'); ?>
+
 <div class="blog-posting container">
   <div class="row">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
