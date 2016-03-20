@@ -28,18 +28,11 @@ get_header();
   <div class="container">
     <h2 class="about-header__heading">Trusted nationwide by the distributted workforce:</h2>
     <ul class="about-cases__list row">
+    <?php if( have_rows('solution-cases') ): while( have_rows('solution-cases') ): the_row(); ?>
       <li class="about-cases__list-item col-sm-3">
-        <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-cleveland-clinic.png" alt="cleveland clinic" />
+        <img class="about-cases__img" src="<?php the_sub_field('case-img'); ?>" alt="case-img" />
       </li>
-      <li class="about-cases__list-item col-sm-3">
-        <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-girl-scouts.png" alt="girl scouts" />
-      </li>
-      <li class="about-cases__list-item col-sm-3">
-        <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-cleveland-clinic.png" alt="cleveland clinic" />
-      </li>
-      <li class="about-cases__list-item col-sm-3">
-        <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-cleveland-clinic.png" alt="cleveland clinic" />
-      </li>
+    <?php endwhile; endif; ?>
     </ul>
   </div>
 </div>
