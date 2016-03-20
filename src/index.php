@@ -10,8 +10,14 @@
       <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array(1200, 350) ); ?>
       <?php if ($thumbnail[0]) : ?>
 
-      <h2><?php the_title(); ?></h2>
-      <img class="blog-posting__featured-img" src="<?php echo $thumbnail[0]; ?>" alt="blog-post-img" />
+      <div class="post-header">
+        <h2><?php the_title(); ?></h2>
+        <img class="blog-posting__featured-img" src="<?php echo $thumbnail[0]; ?>" alt="blog-post-img" />
+      </div>
+      <div class="post-content">
+        <?php the_content(); ?>
+      </div>
+
       <?php endif; ?>
       <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
