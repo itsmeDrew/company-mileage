@@ -1,6 +1,6 @@
       </div>
       <footer class="site-footer row-fluid">
-        <?php if ( ! is_single() && ! is_page_template( 'templates/default-tpl.php' ) ) { ?>
+        <?php if ( ! is_single() && ! is_page_template( 'templates/default-tpl.php' ) && ! is_404() ) { ?>
         <div class="footer-top">
           <div class="container">
             <div class="company col-sm-6">

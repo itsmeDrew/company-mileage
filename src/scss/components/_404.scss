@@ -1,0 +1,44 @@
+////////////////////////
+// PAGE / 404
+////////////////////////
+
+
+.error {
+  @extend .sec;
+
+  background-color: $dark-grey;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    background: url('img/404-worker.png') 110% 50px no-repeat $dark-grey;
+    height: 730px;
+  }
+
+  .btn-secondary {
+    background: $sky;
+    color: $white;
+    border: none;
+  }
+
+  .btn-secondary:hover {
+    background: darken($sky, 15%);
+  }
+}
+
+.error-header__heading--large {
+  font-size: 120px;
+  font-weight: bolder;
+  color: darken($dark-grey, 30%);
+  margin: 0;
+  line-height: normal;
+}
+
+.error-header__message {
+  margin: 0;
+}
+
+.error__btn {
+  display: block;
+  width: 300px;
+  text-align: center;
+  margin: 2rem 0;
+}

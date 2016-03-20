@@ -11,6 +11,7 @@
   @extend .sec;
 
   padding-bottom: 0;
+  margin-bottom: 5rem;
 }
 
 .footer-blog {
@@ -44,7 +45,6 @@
 // footer bottom
 
 .footer-bottom {
-  margin-top: 5rem;
   background-color: $cm-blue;
   padding: 4rem 0;
   position: relative;
