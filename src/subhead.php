@@ -12,9 +12,9 @@
         <?php } ?>
       </div>
       <div class="subhead-social col-xs-4">
-        <i class="subhead__ico fa fa-facebook-square"></i>
-        <i class="subhead__ico fa fa-twitter-square"></i>
-        <i class="subhead__ico fa fa-linkedin-square"></i>
+        <a href="#"><i class="subhead__ico fa fa-facebook-square"></i></a>
+        <a href="#"><i class="subhead__ico fa fa-twitter-square"></i></a>
+        <a href="#"><i class="subhead__ico fa fa-linkedin-square"></i></a>
       </div>
     </div>
   </div>
