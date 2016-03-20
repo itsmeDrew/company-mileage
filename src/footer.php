@@ -1,6 +1,6 @@
       </div>
       <footer class="site-footer row-fluid">
-        <?php if ( ! is_single() ) { ?>
+        <?php if ( ! is_single() && ! is_page_template( 'templates/default-tpl.php' ) ) { ?>
         <div class="footer-top">
           <div class="container">
             <div class="company col-sm-6">
@@ -17,15 +17,12 @@
             <div class="footer-blog col-sm-6">
               <h2 class="footer-blog__heading">recent blogs:</h2>
               <ul class="footer-blog__list">
+                <?php $query = new WP_Query(array( 'posts_per_page' => 3)); ?>
+                <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
                 <li class="footer-blog__list-item">
-                  <a class="footer-blog__link" href="#">2016 IRS Mileage Rate & What it Means for Your Organization</a>
+                  <a class="footer-blog__link" href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
                 </li>
-                <li class="footer-blog__list-item">
-                  <a class="footer-blog__link" href="#">2016 IRS Mileage Rate & What it Means for Your Organization</a>
-                </li>
-                <li class="footer-blog__list-item">
-                  <a class="footer-blog__link" href="#">2016 IRS Mileage Rate & What it Means for Your Organization</a>
-                </li>
+                <?php endwhile; endif; wp_reset_postdata(); ?>
               </ul>
             </div>
           </div>
