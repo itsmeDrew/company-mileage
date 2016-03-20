@@ -16,9 +16,9 @@
   background-color: $cm-orange;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: $white;
-  background-color: darken($cm-orange, 5%);
+  background-color: darken($cm-orange, 5%) !important; //bootstrap override
 }
 
 .btn-secondary {
