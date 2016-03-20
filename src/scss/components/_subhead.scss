@@ -4,13 +4,39 @@
 
 .subhead {
   background-color: $grey;
+  height: 95px;
+
+  .container, .row {
+    height: 100%;
+  }
+
+  .subhead__ico, .subhead__heading {
+    @include breakpointLargerThan($breakpoint--large) {
+      font-size: 36px;
+    }
+
+    @include breakpointBetween($breakpoint--medium, $breakpoint--large) {
+      font-size: 33px;
+    }
+
+    @include breakpointBetween($breakpoint--small, $breakpoint--medium) {
+      font-size: 28px;
+    }
+
+    @include breakpointSmallerThan($breakpoint--small) {
+      font-size: 22px;
+    }
+  }
 }
 
 .subhead-header {
+  @include centerHorizontal();
+
+  position: relative;
 }
 
 .subhead__ico {
-  font-size: 36px;
+  // font-size: 36px;
   display: inline-block;
   color: $cm-blue;
   margin-right: 1rem;
@@ -22,6 +48,8 @@
 }
 
 .subhead-social {
-  padding: 3rem 0;
+  @include centerHorizontal();
+
+  position: relative;
   text-align: right;
 }
