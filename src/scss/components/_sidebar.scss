@@ -7,11 +7,15 @@
 
   background: $grey;
   padding: 2rem;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
 .sidebar-heading {
   font-size: 18px;
-  margin: 0 10px 0 0;
+  margin: 0 0 10px 0;
 }
 
 .sidebar-form {
@@ -49,7 +53,6 @@
 
 .sidebar-subscribe {
   @extend .sidebar;
-
 }
 
 // post-data
