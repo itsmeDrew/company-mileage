@@ -1,3 +1,14 @@
 ////////////////////////
-// PAGE / CONTACT
+// PAGE  / CONTACT
 ////////////////////////
+
+.contact {
+  @extend .sec;
+}
+
+.contact-content {
+  strong {
+    font-size: 22px;
+    font-weight: 400;
+  }
+}

@@ -72,3 +72,41 @@
   margin: 0 auto;
   padding: 1rem 0;
 }
+
+// contact
+
+.sidebar-email {
+  margin-bottom: 3rem;
+
+  a {
+    @extend .btn-primary;
+
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .btn-primary--blue {
+    background-color: $cm-blue;
+
+    &:hover {
+      background-color: darken($cm-blue, 20%);
+    }
+  }
+
+  .btn-primary--grey {
+    background-color: $dark-grey;
+
+    &:hover {
+      background-color: darken($dark-grey, 20%);
+    }
+  }
+
+  .btn-primary--sky {
+    background-color: $sky;
+
+    &:hover {
+      background-color: darken($sky, 10%);
+    }
+  }
+}
