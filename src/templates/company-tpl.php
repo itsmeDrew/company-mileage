@@ -83,7 +83,7 @@ get_header();
     </div>
   </div>
 </div>
-<div class="contact">
+<div class="quote">
   <div class="container">
     <div class="quote-request">
       <div class="quote-form">

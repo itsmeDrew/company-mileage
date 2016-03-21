@@ -140,11 +140,11 @@ get_header();
     </div>
   </div>
 </div>
-<div class="contact">
+<div class="quote">
   <div class="container">
-    <div class="contact-header">
-      <h1 class="contact-header__heading">What You Should Know About CompanyMileage</h1>
-      <p class="contact-header__desc">
+    <div class="quote-header">
+      <h1 class="quote-header__heading">What You Should Know About CompanyMileage</h1>
+      <p class="quote-header__desc">
         At CompanyMileage, we're passionate about designing the best mileage reimbursement software. Take a look at our blog to see our frequent updates, our product pages for more information or our Company page to get to know us a little better. If you’re looking for a quote, fill out the form below and a representative will contact you shortly.
       </p>
     </div>

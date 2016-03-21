@@ -2,6 +2,39 @@
 // COMPONENT / QUOTE
 ////////////////////////
 
+.quote {
+  @extend .sec;
+
+  background-image: url('img/contact-bg.png');
+  background-color: $sky;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.quote-header {
+  margin-bottom: 5rem;
+}
+
+.quote-header__desc {
+  color: $white;
+}
+
+
+// contact {company page}
+
+.page-id-17 .quote {
+  background-repeat: repeat-y;
+
+  .quote-form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 .quote-request {
   @extend .form-box;
 
