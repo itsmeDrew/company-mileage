@@ -15,6 +15,7 @@
   margin: 0;
   width: 100%;
   box-shadow: none;
+  padding: 1rem 2rem;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -29,6 +30,11 @@
   text-shadow: none;
   padding: 5px 15px;
   display: inline-block;
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    font-size: 36px;
+    line-height: 1.5;
+  }
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -78,14 +84,33 @@
   background-color: transparent;
 }
 
-/*navbar home*/
-
-.page-template-home .navbar-default {
-  position: absolute;
-  bottom: 0;
-  background: none;
-  z-index: 100;
+.navbar-banjo {
+  height: 0;
+  visibility: hidden;
 }
+
+.menu-active {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+
+  .navbar-default {
+    position: absolute;
+    background: $white;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 999;
+  }
+
+  .navbar-banjo {
+    visibility: visible;
+    height: 100%;
+  }
+}
+
+/*navbar home*/
 
 .site-login__btn {
   @include breakpointSmallerThan($breakpoint--medium) {
