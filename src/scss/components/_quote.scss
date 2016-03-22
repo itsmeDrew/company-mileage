@@ -9,9 +9,12 @@
   background-color: $sky;
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: 100% auto;
   padding-bottom: 10rem;
   text-align: center;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    background-size: 100% auto;
+  }
 }
 
 .quote-header {

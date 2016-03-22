@@ -49,6 +49,12 @@
   }
 }
 
+.about-info__heading {
+  @include breakpointSmallerThan($breakpoint--medium) {
+    font-size: 18px;
+  }
+}
+
 // solutions
 
 .solutions {
