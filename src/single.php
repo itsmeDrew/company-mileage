@@ -30,7 +30,7 @@ get_header();
         <?php the_content(); ?>
       </div>
       <div class="post-demo">
-        <div class="demo-request row">
+        <div class="demo-request">
           <div class="demo-header col-sm-6">
             <h2 class="demo__heading">Watch a 2 Minute Demo of CompanyMilage</h2>
             <p class="demo__p">

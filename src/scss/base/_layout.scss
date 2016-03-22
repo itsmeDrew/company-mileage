@@ -7,7 +7,8 @@ body {
 }
 
 .sec {
-  padding: $base-sec__padding;
+  padding-top: $base-sec__padding;
+  padding-bottom: $base-sec__padding;
 
   header {
     margin-bottom: 3rem;
