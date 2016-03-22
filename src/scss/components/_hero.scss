@@ -38,12 +38,17 @@
 .home .jumbotron {
   @extend .jumbotron;
 
+  background-image: url('img/hero-overlay.png');
+  background-repeat: no-repeat;
+
   @include breakpointLargerThan($breakpoint--medium) {
     padding: 10rem 0 25rem 0;
+    background-position: 50% 400px;
   }
 
   @include breakpointSmallerThan($breakpoint--medium) {
     padding: 5rem 0 20rem 0;
+    background-position: 50% 500px;
   }
 
   @include breakpointSmallerThan($breakpoint--small) {
