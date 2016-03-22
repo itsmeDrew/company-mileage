@@ -74,6 +74,13 @@
 .navbar__logo {
   @include breakpointLargerThan($breakpoint--medium) {
     padding: 2rem 0;
+    max-width: 100%;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    max-width: 220px;
+    width: 100%;
+    padding: .75rem 0;
   }
 }
 
@@ -100,14 +107,15 @@
 }
 
 .menu-active {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-
   @include breakpointSmallerThan($breakpoint--medium) {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
     .navbar-default {
       position: absolute;
       background: $white;
+      top: 0;
       left: 0;
       height: 100%;
       width: 100%;

@@ -10,5 +10,9 @@
   strong {
     font-size: 22px;
     font-weight: 400;
+
+    @include breakpointSmallerThan($breakpoint--medium) {
+      font-size: 18px;
+    }
   }
 }

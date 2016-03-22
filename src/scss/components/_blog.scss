@@ -47,6 +47,12 @@
 
 .blog-posting {
   @extend .sec;
+
+  .content {
+    @include breakpointSmallerThan($breakpoint--medium) {
+      padding-top: 2rem;
+    }
+  }
 }
 
 .post-title {

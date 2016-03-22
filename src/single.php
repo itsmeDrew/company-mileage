@@ -18,7 +18,7 @@ get_header();
     <div class="col-sm-4">
       <?php get_sidebar('blog-posts'); ?>
     </div>
-    <div class="col-sm-8">
+    <div class="content col-sm-8">
       <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array(1200, 350) ); ?>
       <?php if ($thumbnail[0]) : ?>
 

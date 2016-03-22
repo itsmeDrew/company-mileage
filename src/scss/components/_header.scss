@@ -9,26 +9,6 @@
   background: $white;
 }
 
-.site-header__content {
-  @include breakpointLargerThan($breakpoint--large) {
-    @include center($container);
-  }
-}
-
-.site-branding {
-  @include breakpointLargerThan($breakpoint--medium) {
-    @include col(4/12);
-  }
-
-  @include breakpointSmallerThan($breakpoint--medium) {
-    @include col(6/12);
-  }
-}
-
-.site-branding__logo  {
-  max-width: 100%;
-}
-
 .site-login__phone {
   color: $cm-blue;
 }

@@ -84,6 +84,11 @@
     display: block;
     text-align: center;
     margin: 1rem 0;
+
+    @include breakpointSmallerThan($breakpoint--large) {
+      max-width: 350px;
+      margin: 1rem auto;
+    }
   }
 
   .btn-primary--blue {
