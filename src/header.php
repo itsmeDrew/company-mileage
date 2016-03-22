@@ -32,8 +32,7 @@
           <a href="<?php echo esc_url( home_url('/') ); ?>"><img class="navbar__logo" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="logo" /></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="navbar-banjo" id="bs-example-navbar-collapse-1">
+        <div class="navbar-banjo">
           <div class="navbar-right">
             <div class="navbar-top">
               <span class="site-login__phone">Call (877) 677 0377</span>

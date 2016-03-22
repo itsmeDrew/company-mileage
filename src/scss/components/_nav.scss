@@ -71,6 +71,12 @@
   }
 }
 
+.navbar__logo {
+  @include breakpointLargerThan($breakpoint--medium) {
+    padding: 2rem 0;
+  }
+}
+
 /*mobile menu*/
 
 .navbar-default .navbar-toggle .icon-bar {

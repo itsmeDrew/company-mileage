@@ -43,7 +43,11 @@
   }
 
   @include breakpointSmallerThan($breakpoint--medium) {
-    padding: 10rem 0 15rem 0;
+    padding: 5rem 0 20rem 0;
+  }
+
+  @include breakpointSmallerThan($breakpoint--small) {
+    padding: 5rem 0 10rem 0;
   }
 }
 
