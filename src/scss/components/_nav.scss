@@ -28,12 +28,20 @@
 .navbar-default .navbar-nav > li > a {
   color: $cm-blue;
   text-shadow: none;
-  padding: 5px 15px;
   display: inline-block;
 
   @include breakpointSmallerThan($breakpoint--medium) {
     font-size: 36px;
     line-height: 1.5;
+  }
+
+  @include breakpointBetween($breakpoint--medium, $breakpoint--large) {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  @include breakpointLargerThan($breakpoint--large) {
+    padding: 5px 15px;
   }
 }
 
@@ -72,9 +80,15 @@
 }
 
 .navbar__logo {
-  @include breakpointLargerThan($breakpoint--medium) {
+  @include breakpointLargerThan($breakpoint--large) {
     padding: 2rem 0;
     max-width: 100%;
+  }
+
+  @include breakpointBetween($breakpoint--medium, $breakpoint--large) {
+    max-width: 220px;
+    width: 100%;
+    padding: 3rem 0;
   }
 
   @include breakpointSmallerThan($breakpoint--medium) {
