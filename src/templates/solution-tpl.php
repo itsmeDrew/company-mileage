@@ -72,7 +72,7 @@ get_header();
 <div class="solution-features">
   <div class="container">
     <div class="feature-slider">
-      <div class="feature-slider__slides js-feature-slider__slides col-md-6">
+      <div class="feature-slider__slides js-feature-slider__slides col-sm-6">
         <div class="feature-slider__slide">
           <img class="feature-slider__slide-img" src="http://lorempixel.com/450/350/" alt="slide-img" />
         </div>
@@ -83,7 +83,7 @@ get_header();
           <img class="feature-slider__slide-img" src="http://lorempixel.com/450/352/" alt="slide-img" />
         </div>
       </div>
-      <div class="feature-slider__controls js-feature-slider__nav col-md-6">
+      <div class="feature-slider__controls js-feature-slider__nav col-sm-6">
         <div class="feature-slider__control">
           <h2 class="feature-slider__heading">Title goes here</h2>
           <p>
@@ -221,11 +221,11 @@ get_header();
     </div>
   </div>
 </div>
-<div class="contact">
+<div class="quote">
   <div class="container">
-    <div class="contact-header">
-      <h1 class="contact-header__heading">see how it works</h1>
-      <p class="contact-header__desc">
+    <div class="quote-header">
+      <h1 class="quote-header__heading">see how it works</h1>
+      <p class="quote-header__desc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. at nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>

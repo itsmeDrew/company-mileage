@@ -62,4 +62,10 @@
 
   overflow: hidden;
   width: 100%;
+
+  .feature-slider__slide-img {
+    @include breakpointSmallerThan($breakpoint--medium) {
+      margin: 0 auto;
+    }
+  }
 }
