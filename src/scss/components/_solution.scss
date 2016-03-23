@@ -22,12 +22,28 @@
 
 .benefits-list {
   text-align: center;
+  @include breakpointSmallerThan($breakpoint--medium) {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.benefits-list__list-item {
+  display: inline-block;
+  margin: 1rem 0;
 }
 
 .benefits-list__icon {
-  padding: $base-sec__padding;
   color: $cm-blue;
   font-size: 120px;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    padding: $base-sec__padding;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    padding: 1rem;
+  }
 }
 
 .benefits-list__heading {
