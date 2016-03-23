@@ -22,7 +22,7 @@ get_header();
           </p>
         </div>
         <a class="error__btn btn-secondary" href="<?php echo esc_url( home_url('/') ); ?>">go to homepage</a>
-        <a class="error__btn btn-primary" href="#">contact support</a>
+        <a class="error__btn btn-primary" href="<?php echo get_permalink(get_page_by_path('Contact')); ?>">contact support</a>
       </div>
     </div>
   </div>
