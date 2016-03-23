@@ -69,11 +69,15 @@
 
 // SOLUTION
 
-.page-id-13 .jumbotron {
+.page-template-solution-tpl .jumbotron {
   padding-bottom: 0;
+
+  .jumbotron-header {
+    margin-bottom: 4rem;
+  }
 }
 
-.page-id-13 .jumbotron-display {
+.page-template-solution-tpl .jumbotron-display {
   margin: 0 auto;
 }
 

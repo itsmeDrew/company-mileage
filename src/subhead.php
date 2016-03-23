@@ -9,7 +9,8 @@
 
         <?php } else if (
           is_page_template( 'templates/default-tpl.php' ) ||
-          is_page_template( 'templates/contact-tpl.php' )
+          is_page_template( 'templates/contact-tpl.php' ) ||
+          is_page_template( 'templates/industry-tpl.php' )
         ) { ?>
           <h1 class="subhead__heading"><?php the_title(); ?></h1>
 

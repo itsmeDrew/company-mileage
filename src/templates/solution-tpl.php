@@ -230,7 +230,7 @@ get_header();
       </p>
     </div>
     <div class="quote-request row-fluid">
-      <h4 class="quote-request__heading">get a quote</h4>
+      <h4 class="quote-request__heading">See CompanyMileage in Action</h4>
       <div class="quote-form">
         <div class="quote-form__input--wrapper col-md-6">
           <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
