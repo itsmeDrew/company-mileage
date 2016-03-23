@@ -20,7 +20,6 @@
 
   <header class="site-header">
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="js-mobile-menu navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -32,32 +31,23 @@
           <a href="<?php echo esc_url( home_url('/') ); ?>"><img class="navbar__logo" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="logo" /></a>
         </div>
 
-        <div class="navbar-banjo">
-          <div class="navbar-right">
-            <div class="navbar-top">
-              <span class="site-login__phone">Call (877) 677 0377</span>
-              <a class="btn-primary site-login__btn" href="#">request demo</a>
-              <a class="btn-secondary site-login__btn" href="#">login</a>
-            </div>
-            <ul class="nav navbar-nav">
-              <li class="page_item navbar-nav__cart">
-                <ul class="nav navbar-nav">
-                  <?php
-                    $sitePages = array(
-                      'depth'        => 1,
-                      'exclude'      => '',
-                      'post_status'  => 'publish',
-                      'sort_column'  => 'menu_order',
-                      'title_li'     => ''
-                    );
-                  ?>
-                  <?php wp_list_pages($sitePages); ?>
-                </ul>
-              </li>
-            </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="navbar-top">
+            <span class="site-login__phone">Call (877) 677 0377</span>
+            <a class="btn-primary site-login__btn" href="#">request demo</a>
+            <a class="btn-secondary site-login__btn" href="#">login</a>
           </div>
+          <ul class="nav navbar-nav navbar-right">
+            <?php $args = array(
+              'depth'        => 2,
+              'post_status'  => 'publish',
+              'sort_column'  => 'menu_order',
+              'title_li'     => ''
+            ); ?>
+            <?php wp_list_pages($args); ?>
+          </ul>
         </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
     </nav>
 
   </header>

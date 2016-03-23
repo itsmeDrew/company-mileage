@@ -31,7 +31,7 @@
   display: inline-block;
 
   @include breakpointSmallerThan($breakpoint--medium) {
-    font-size: 36px;
+    font-size: 22px;
     line-height: 1.5;
   }
 
@@ -100,6 +100,24 @@
 
 /*mobile menu*/
 
+.dropdown-menu > li > a {
+    padding: 8px 20px;
+    color: $cm-blue;
+}
+.dropdown-menu > li:first-child > a{
+    border-radius: 10px 10px 0 0;
+}
+.dropdown-menu > li:last-child > a{
+    border-bottom: 0 none;
+    border-radius: 0 0 10px 10px;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color: #F5F5F5;
+    color: #333333;
+    opacity: 1;
+    text-decoration: none;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
   background-color: $cm-blue;
   height: 3px;
@@ -112,35 +130,6 @@
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
-}
-
-.navbar-banjo {
-  @include breakpointSmallerThan($breakpoint--medium) {
-    display: none;
-  }
-}
-
-.menu-active {
-  @include breakpointSmallerThan($breakpoint--medium) {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-
-    .navbar-default {
-      position: absolute;
-      background: $white;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      z-index: 999;
-    }
-
-    .navbar-banjo {
-      display: block;
-    }
-  }
 }
 
 /*navbar home*/
