@@ -33,6 +33,35 @@
   color: $white;
 }
 
+.jumbotron--secondary {
+  @extend .jumbotron;
+
+  background-size: cover;
+  padding: 10rem 0;
+
+  .jumbotron__heading {
+    text-align: left;
+    max-width: 600px;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $cm-orange;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+}
+
 // HOME
 
 .home .jumbotron {
