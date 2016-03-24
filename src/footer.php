@@ -4,6 +4,7 @@
           ! is_single() &&
           ! is_page_template( 'templates/default-tpl.php' ) &&
           ! is_page_template( 'templates/industry-tpl.php' ) &&
+          ! is_page_template( 'templates/pricing-tpl.php' ) &&
           ! is_404()
         ) { ?>
         <div class="footer-top">
