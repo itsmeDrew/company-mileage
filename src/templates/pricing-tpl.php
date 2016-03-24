@@ -21,7 +21,59 @@ get_header();
 <div class="contact container">
   <div class="contact-content">
       <?php the_content(); ?>
-
+      <div class="pricing row">
+        <div class="pricing__block col-sm-4">
+          <div class="pricing__header">
+            <span class="pricing__heading">SureMileage</span>
+          </div>
+          <ul class="pricing__list">
+            <li class="pricing__item">Point-to-Point Mileage Calculation</li>
+            <li class="pricing__item">Payroll Integration*</li>
+            <li class="pricing__item">Accounting Integration*</li>
+            <li class="pricing__item">SureMobile Access</li>
+            <li class="pricing__item">Month-to-Month Contract</li>
+            <li class="pricing__item">Full LIbrary of Reports</li>
+          </ul>
+          <div class="pricing__footer">
+            <a class="pricing__link" href="#">request demo</a>
+          </div>
+        </div>
+        <div class="pricing__block col-sm-4">
+          <div class="pricing__header">
+            <span class="pricing__heading">SureExpense</span>
+          </div>
+          <ul class="pricing__list">
+            <li class="pricing__item">Online Expense Submission</li>
+            <li class="pricing__item">Online Receipt Submission</li>
+            <li class="pricing__item">Payroll Integration*</li>
+            <li class="pricing__item">Accounting Integration*</li>
+            <li class="pricing__item">SureMobile Access</li>
+            <li class="pricing__item">Month-to-Month Conract</li>
+            <li class="pricing__item">Full Library of Reports</li>
+          </ul>
+          <div class="pricing__footer">
+            <a class="pricing__link" href="#">request demo</a>
+          </div>
+        </div>
+        <div class="pricing__block col-sm-4">
+          <div class="pricing__header">
+            <span class="pricing__heading">Full Suite</span>
+          </div>
+          <ul class="pricing__list">
+            <li class="pricing__item">Point-to-Point Mileage Calculation</li>
+            <li class="pricing__item">Online Expense Submission</li>
+            <li class="pricing__item">Online Receipt Submission</li>
+            <li class="pricing__item">Payroll Integration*</li>
+            <li class="pricing__item">Accounting Integration*</li>
+            <li class="pricing__item">SureMobile Access</li>
+            <li class="pricing__item">Month-to-Month Conract</li>
+            <li class="pricing__item">Full Library of Reports</li>
+          </ul>
+          <div class="pricing__footer">
+            <a class="pricing__link" href="#" href="#">request demo</a>
+          </div>
+        </div>
+      </div>
 <?php endwhile; endif; wp_reset_postdata(); ?>
   </div>
 </div>
