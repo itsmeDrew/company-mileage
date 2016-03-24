@@ -1,6 +1,17 @@
 .pricing {
   text-align: center;
   margin-top: 6rem;
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.pricing__block {
+  @include breakpointSmallerThan($breakpoint--medium) {
+    margin: 3rem 0;
+  }
 }
 
 .pricing__header {
