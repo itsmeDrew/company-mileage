@@ -4,8 +4,14 @@
 
 .page-template-demo-tpl {
   .jumbotron {
-    padding: 8rem 0;
+    padding: 8rem 0 17rem 0;
+    margin-bottom: 16rem;
+
+    .container {
+      position: relative;
+    }
   }
+
   .jumbotron__heading {
     margin-bottom: 3rem;
     font-weight: 400;
@@ -17,5 +23,10 @@
     padding-top: 3rem;
     font-weight: 400;
     color: $white;
+  }
+
+  .quote-request {
+    position: absolute;
+    bottom: -330px;
   }
 }

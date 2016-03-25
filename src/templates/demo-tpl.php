@@ -24,8 +24,11 @@ get_header();
       </div>
     </div>
     <strong class="jumbotron__heading--secondary">Call (877) 677-0377 or fill out the contact form below.</strong>
+    <div class="quote-request row-fluid">
+      <h4 class="quote-request__heading">get a quote</h4>
+      <?php echo do_shortcode( '[contact-form-7 id="68" title="Home Quote"]' ); ?>
+    </div>
   </div>
-
 </div>
 
 <?php get_footer(); ?>
