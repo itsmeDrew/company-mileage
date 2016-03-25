@@ -41,6 +41,7 @@
           <ul class="nav navbar-nav navbar-right">
             <?php $args = array(
               'depth'        => 2,
+              'exclude'      => '69',
               'post_status'  => 'publish',
               'sort_column'  => 'menu_order',
               'title_li'     => ''
