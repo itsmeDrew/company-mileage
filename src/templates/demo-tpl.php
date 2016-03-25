@@ -13,7 +13,7 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/KwyOfqbP8JU" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/<?php the_field('demo_video'); ?>" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="col-md-4">
         <h2 class="jumbotron__heading">Watch More Demos</h2>
@@ -25,8 +25,8 @@ get_header();
     </div>
     <strong class="jumbotron__heading--secondary">Call (877) 677-0377 or fill out the contact form below.</strong>
     <div class="quote-request row-fluid">
-      <h4 class="quote-request__heading">get a quote</h4>
-      <?php echo do_shortcode( '[contact-form-7 id="68" title="Home Quote"]' ); ?>
+      <h4 class="quote-request__heading">Contact A Representative</h4>
+      <?php echo do_shortcode( '[contact-form-7 id="71" title="Contact a Representative"]' ); ?>
     </div>
   </div>
 </div>
