@@ -11,18 +11,15 @@ get_header();
 
 <div class="jumbotron">
   <div class="container">
-    <h1 class="jumbotron__heading">Save 20-30% on Mileage COSTS</h1>
-    <p class="jumbotron__desc">
-      CompanyMileage provides companies with significant savings on mileage reimbursement by accurately verifying employee mileage & automating the reimbursement process. How much could your company save?
-    </p>
-    <div class="savings-calculator">
-      <input class="savings-calculator__input" type="text" name="name" placeholder="number of employees">
-      <input class="savings-calculator__input" type="text" name="name" placeholder="miles driven per week">
-      <input class="savings-calculator__input" type="text" name="name" placeholder="reimbursment rate">
-      <a class="btn-primary" href="#">calculate savings</a>
+    <div class="col-md-8">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/KwyOfqbP8JU" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="jumbotron-display">
-      <img class="jumbotron-display__img" src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />
+    <div class="col-md-4">
+      <h2 class="jumbotron__heading">Watch More Demos</h2>
+      <a class="btn-primary--light-grey" href="mailto:support@companymileage.com">email support</a>
+      <a class="btn-primary--sky" href="mailto:management@companymileage.com">email management</a>
+      <a class="btn-primary--orange" href="mailto:sales@companymileage.com">email sales</a>
+      <a class="btn-primary--grey" href="#">join webex meeting</a>
     </div>
   </div>
 </div>

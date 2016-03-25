@@ -28,3 +28,64 @@
   color: $cm-blue;
   border: 1px solid #ededed;
 }
+
+.btn--long {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+
+  @include breakpointSmallerThan($breakpoint--large) {
+    max-width: 350px;
+    margin: 1rem auto;
+  }
+}
+
+.btn-primary--orange {
+  @extend .btn--long;
+  @extend .btn-primary;
+}
+
+.btn-primary--blue {
+  @extend .btn--long;
+  @extend .btn-primary;
+
+  background-color: $cm-blue;
+
+  &:hover, &:active, &:focus {
+    background-color: darken($cm-blue, 20%);
+  }
+}
+
+.btn-primary--light-grey {
+  @extend .btn--long;
+  @extend .btn-primary;
+
+  background-color: $med-tan;
+  color: $black;
+
+  &:hover, &:active, &:focus {
+    background-color: darken($med-tan, 20%);
+  }
+}
+
+.btn-primary--grey {
+  @extend .btn--long;
+  @extend .btn-primary;
+
+  background-color: $dark-grey;
+
+  &:hover, &:active, &:focus {
+    background-color: darken($dark-grey, 20%);
+  }
+}
+
+.btn-primary--sky {
+  @extend .btn--long;
+  @extend .btn-primary;
+
+  background-color: $sky;
+
+  &:hover, &:active, &:focus {
+    background-color: darken($sky, 10%);
+  }
+}
