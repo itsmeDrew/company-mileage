@@ -58,8 +58,7 @@ get_header();
           In just 2 minutes, you can see how easily CompanyMileage can automate your mileage reimbursement processes.
         </p>
         <div class="demo-form">
-          <input class="demo-form__input" type="text" name="email" placeholder="Your Email Address">
-          <a class="demo-form__btn btn-primary" href="#">watch demo</a>
+          <?php echo do_shortcode( '[contact-form-7 id="67" title="Demo 1"]' ); ?>
         </div>
       </div>
     </div>
@@ -150,21 +149,7 @@ get_header();
     </div>
     <div class="quote-request row-fluid">
       <h4 class="quote-request__heading">get a quote</h4>
-      <div class="quote-form">
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
-      </div>
-      <a class="btn-primary" href="#">submit</a>
+      <?php echo do_shortcode( '[contact-form-7 id="68" title="Home Quote"]' ); ?>
     </div>
   </div>
 </div>
