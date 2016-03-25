@@ -17,10 +17,10 @@ get_header();
       </div>
       <div class="col-md-4">
         <h2 class="jumbotron__heading">Watch More Demos</h2>
-        <a class="btn-primary--light-grey" href="mailto:support@companymileage.com">email support</a>
-        <a class="btn-primary--sky" href="mailto:management@companymileage.com">email management</a>
-        <a class="btn-primary--orange" href="mailto:sales@companymileage.com">email sales</a>
-        <a class="btn-primary--grey" href="#">join webex meeting</a>
+        <a class="btn-primary--light-grey" href="<?php echo get_permalink('76'); ?>">Solutions for Hospice & Homecare</a>
+        <a class="btn-primary--sky" href="<?php echo get_permalink('78'); ?>">Solutions for Traditional Business</a>
+        <a class="btn-primary--orange" href="<?php echo get_permalink('69'); ?>">SureExpense Demo</a>
+        <a class="btn-primary--grey" href="<?php echo get_permalink('83'); ?>">Concur Integration</a>
       </div>
     </div>
     <strong class="jumbotron__heading--secondary">Call (877) 677-0377 or fill out the contact form below.</strong>
