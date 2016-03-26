@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <div class="navbar-top">
             <span class="site-login__phone">Call (877) 677 0377</span>
-            <a class="btn-primary site-login__btn" href="#">request demo</a>
+            <a class="btn-primary site-login__btn" href="<?php echo get_permalink(69); ?>">request demo</a>
             <a class="btn-secondary site-login__btn" href="#">login</a>
           </div>
           <ul class="nav navbar-nav navbar-right">
