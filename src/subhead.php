@@ -20,7 +20,7 @@
           ?>
 
         <?php } else { ?>
-          <h1 class="subhead__heading--small"><?php the_title(); ?></h1>
+          <h1 class="subhead__heading"><?php the_title(); ?></h1>
 
         <?php } ?>
       </div>
