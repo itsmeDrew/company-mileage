@@ -79,7 +79,7 @@ get_header();
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
         </p>
-        <a class="solutions__btn btn-secondary" href="#">learn more</a>
+        <a class="solutions__btn btn-secondary" href="<?php echo get_permalink(13);?>">learn more</a>
       </li>
       <li class="solutions__list-item col-md-4">
         <img src="<?php bloginfo('template_url'); ?>/img/ico-solutions-key.png" alt="key" />
@@ -87,7 +87,7 @@ get_header();
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
         </p>
-        <a class="solutions__btn btn-secondary" href="#">learn more</a>
+        <a class="solutions__btn btn-secondary" href="<?php echo get_permalink(104);?>">learn more</a>
       </li>
       <li class="solutions__list-item col-md-4">
         <img src="<?php bloginfo('template_url'); ?>/img/ico-solutions-key.png" alt="key" />
@@ -95,7 +95,7 @@ get_header();
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
         </p>
-        <a class="solutions__btn btn-secondary" href="#">learn more</a>
+        <a class="solutions__btn btn-secondary" href="<?php echo get_permalink(106);?>">learn more</a>
       </li>
     </ul>
   </div>
