@@ -9,7 +9,7 @@
 get_header();
 ?>
 
-<div class="jumbotron">
+<div class="jumbotron" style="background-color:<?php the_field('solution-hero-color'); ?>">
   <div class="container">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="jumbotron-header">
@@ -19,7 +19,7 @@ get_header();
       </p>
     </div>
     <div class="jumbotron-display">
-      <img class="jumbotron-display__img" src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />
+      <img class="jumbotron-display__img" src="<?php the_field('solution-graphic');?>" alt="map" />
     </div>
     <?php endwhile; endif; wp_reset_postdata(); ?>
   </div>
@@ -45,27 +45,15 @@ get_header();
       </p>
     </header>
     <ul class="benefits-list row-fluid">
+      <?php if( have_rows('solution-benefits') ): while( have_rows('solution-benefits') ): the_row(); ?>
       <li class="benefits-list__list-item col-sm-4">
-        <i class="benefits-list__icon fa fa-lock"></i>
-        <h3 class="benefits-list__heading">benefit 1</h3>
+        <i class="benefits-list__icon fa <?php the_sub_field('solution-benefits-ico'); ?>"></i>
+        <h3 class="benefits-list__heading"><?php the_sub_field('solution-benefits-title'); ?></h3>
         <p class="benefits-list__p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <?php the_sub_field('solution-benefits-text'); ?>
         </p>
       </li>
-      <li class="benefits-list__list-item col-sm-4">
-        <i class="benefits-list__icon fa fa-clock-o"></i>
-        <h3 class="benefits-list__heading">benefit 2</h3>
-        <p class="benefits-list__p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </li>
-      <li class="benefits-list__list-item col-sm-4">
-        <i class="benefits-list__icon fa fa-line-chart"></i>
-        <h3 class="benefits-list__heading">benefit 3</h3>
-        <p class="benefits-list__p">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </li>
+      <?php endwhile; endif; ?>
     </ul>
   </div>
 </div>
@@ -73,35 +61,21 @@ get_header();
   <div class="container">
     <div class="feature-slider">
       <div class="feature-slider__slides js-feature-slider__slides col-sm-6">
+        <?php if( have_rows('solution-slider') ): while( have_rows('solution-slider') ): the_row(); ?>
         <div class="feature-slider__slide">
-          <img class="feature-slider__slide-img" src="http://lorempixel.com/450/350/" alt="slide-img" />
+          <img class="feature-slider__slide-img" src="<?php the_sub_field('solution-slider-img'); ?>" alt="slide-img" />
         </div>
-        <div class="feature-slider__slide">
-          <img class="feature-slider__slide-img" src="http://lorempixel.com/450/351/" alt="slide-img" />
-        </div>
-        <div class="feature-slider__slide">
-          <img class="feature-slider__slide-img" src="http://lorempixel.com/450/352/" alt="slide-img" />
-        </div>
+        <?php endwhile; endif; ?>
       </div>
       <div class="feature-slider__controls js-feature-slider__nav col-sm-6">
+        <?php if( have_rows('solution-slider') ): while( have_rows('solution-slider') ): the_row(); ?>
         <div class="feature-slider__control">
-          <h2 class="feature-slider__heading">Title goes here</h2>
+          <h2 class="feature-slider__heading"><?php the_sub_field('solution-slider-heading'); ?></h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <?php the_sub_field('solution-slider-text'); ?>
           </p>
         </div>
-        <div class="feature-slider__control">
-          <h2 class="feature-slider__heading">Title goes here</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <div class="feature-slider__control">
-          <h2 class="feature-slider__heading">Title goes here</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
+        <?php endwhile; endif; ?>
       </div>
     </div>
   </div>
@@ -232,20 +206,8 @@ get_header();
     <div class="quote-request row-fluid">
       <h4 class="quote-request__heading">See CompanyMileage in Action</h4>
       <div class="quote-form">
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
-        <div class="quote-form__input--wrapper col-md-6">
-          <input class="quote-form__input" type="text" name="name" placeholder="Company Name">
-        </div>
+        <?php echo do_shortcode('[contact-form-7 id="87" title="Solution Demo"]'); ?>
       </div>
-      <a class="btn-primary" href="#">submit</a>
     </div>
   </div>
 </div>

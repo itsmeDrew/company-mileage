@@ -38,8 +38,7 @@ get_header();
             </p>
           </div>
           <div class="demo-form col-sm-6">
-            <input class="demo-form__input" type="text" name="email" placeholder="Your Email Address">
-            <a class="demo-form__btn btn-primary" href="#">watch demo</a>
+            <?php echo do_shortcode('[contact-form-7 id="67" title="Demo 1"]'); ?>
           </div>
         </div>
       </div>

@@ -27,3 +27,9 @@ input {
   float: none;
   display: inline-block;
 }
+
+.wpcf7[role="form"] {
+  p {
+    display: inline-block;
+  }
+}

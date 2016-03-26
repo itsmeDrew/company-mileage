@@ -9,9 +9,7 @@
     <p>Subscribe to our blog:</p>
 
     <div class="sidebar-form">
-      <input class="sidebar-form__input" type="email" name="text" placeholder="Your Name">
-      <input class="sidebar-form__input" type="email" name="email" placeholder="Your Email">
-      <a class="sidebar-form__btn btn-primary" href="#">subscribe</a>
+      <?php echo do_shortcode('[contact-form-7 id="102" title="Sidebar Blog"]'); ?>
     </div>
   </div>
 </div>
