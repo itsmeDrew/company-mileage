@@ -14,8 +14,13 @@
         <?php } else if ( is_404() ) { ?>
           <h1 class="subhead__heading">404</h1>
 
+        <?php } else if ( is_archive() ) { ?>
+          <?php
+            single_cat_title( '<h1 class="subhead__heading">', '</h1>' );
+          ?>
+
         <?php } else { ?>
-          <h1 class="subhead__heading"><?php the_title(); ?></h1>
+          <h1 class="subhead__heading--small"><?php the_title(); ?></h1>
 
         <?php } ?>
       </div>
