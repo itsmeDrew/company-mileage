@@ -22,3 +22,8 @@ input {
 .wpcf7 input {
   max-width: 100%;
 }
+
+.wpcf7-response-output.wpcf7-validation-errors {
+  float: none;
+  display: inline-block;
+}

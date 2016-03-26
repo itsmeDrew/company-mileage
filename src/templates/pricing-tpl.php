@@ -52,7 +52,7 @@ get_header();
             <li class="pricing__item">Full Library of Reports</li>
           </ul>
           <div class="pricing__footer">
-            <a class="pricing__link" href="#">request demo</a>
+            <a class="pricing__link" href="<?php echo get_permalink(69); ?>">request demo</a>
           </div>
         </div>
         <div class="pricing__block col-sm-4">
