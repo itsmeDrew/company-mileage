@@ -14,8 +14,14 @@ get_header();
 <div class="blog container">
   <div class="row">
     <div class="blog-list col-md-8">
-      <?php $queryBlog = new WP_Query(array( 'posts_per_page' => 5)); ?>
-      <?php if ($queryBlog->have_posts()) : while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
+      <?php
+      if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
+      elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
+      else { $paged = 1; }
+
+      $wp_query = new WP_Query('posts_per_page=3&paged=' . $paged);
+      ?>
+      <?php if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <div class="blog-listing">
         <div class="blog-listing__header">
           <h2 class="blog-listing__heading"><a href="<?php echo the_permalink();?>"><?php the_title(); ?></a></h2>
@@ -33,13 +39,19 @@ get_header();
           <?php the_excerpt(); ?>
         </p>
       </div>
-      <?php endwhile; endif; wp_reset_postdata(); ?>
+      <?php endwhile; ?>
 
     </div>
     <div class="blog-sidebar col-md-4">
       <?php get_sidebar('blog'); ?>
     </div>
   </div>
+  <div class="row">
+    <?php if(function_exists('wp_paginate')) {
+      wp_paginate();
+    } ?>
+  </div>
+<?php endif; wp_reset_postdata(); ?>
 </div>
 
 <?php get_footer(); ?>
