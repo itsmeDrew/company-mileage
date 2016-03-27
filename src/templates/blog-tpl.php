@@ -20,6 +20,7 @@ get_header();
       else { $paged = 1; }
 
       $wp_query = new WP_Query('posts_per_page=3&paged=' . $paged);
+      global $wp_query;
       ?>
       <?php if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
       <div class="blog-listing">
@@ -47,9 +48,9 @@ get_header();
     </div>
   </div>
   <div class="row">
-    <?php if(function_exists('wp_paginate')) {
-      wp_paginate();
-    } ?>
+    <?php previous_posts_link(); ?>
+    <?php echo 'Page '.intval(get_query_var('paged')).' of '.$wp_query->max_num_pages.''; ?>
+    <?php next_posts_link(); ?>
   </div>
 <?php endif; wp_reset_postdata(); ?>
 </div>
