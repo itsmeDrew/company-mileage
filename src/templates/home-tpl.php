@@ -102,38 +102,41 @@ get_header();
 </div>
 <div class="industries row-fluid">
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-7">
       <h2>Serving the Mobile Workforce Nationwide</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <div class="industry-list">
-        <div class="industry-list__listing">
-          <img class="industry-icon" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
-          <div class="industry-list__content">
+      <div class="industry__list">
+        <div class="industry__listing">
+          <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
+          <div class="industry__content">
             <h2>Healthcare & Family Services</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
           </div>
+          <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
         </div>
-        <div class="industry-list__listing">
-          <img class="industry-icon" src="<?php bloginfo('template_url'); ?>/img/ico-wallet.png" alt="ico-wallet" />
-          <div class="industry-list__content">
+        <div class="industry__listing">
+          <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wallet.png" alt="ico-wallet" />
+          <div class="industry__content">
             <h2>Sales Representatives</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
           </div>
+          <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
         </div>
-        <div class="industry-list__listing">
-          <img class="industry-icon" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
-          <div class="industry-list__content">
+        <div class="industry__listing">
+          <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wheel.png" alt="ico-healthcare" />
+          <div class="industry__content">
             <h2>Mobile Employees</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
           </div>
+          <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
         </div>
       </div>
     </div>

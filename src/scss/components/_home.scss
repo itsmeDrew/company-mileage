@@ -100,7 +100,7 @@
   }
 }
 
-.industry-list__listing {
+.industry__listing {
   @include cf();
   @include borderRadius(10px);
 
@@ -108,14 +108,38 @@
   margin: 2rem 0;
   background: $tan;
   border: 2px solid $dark-tan;
+  position: relative;
+  color: $dark-grey;
+
+  //moving to img in html
+  // &:after {
+  //   content: "";
+  //   background-image: url('img/ico-arrow-right.png');
+  //   display: block;
+  //   position: absolute;
+  //   width: 21px;
+  //   height: 39px;
+  //   right: 30px;
+  //   transform: translateY(-50%);
+  //   top: 50%;
+  //   font-size: 3rem;
+  // }
 }
 
-.industry-icon {
+.industry__ico {
+  float: left;
   position: relative;
   padding: 4rem 1rem;
 }
 
-.industry-list__content {
-  float: right;
+.industry__ico--arrow {
+  @include centerHorizontal();
+
+  position: absolute;
+  right: 10px;
+}
+
+.industry__content {
+  float: left;
   width: 80%;
 }
