@@ -110,20 +110,10 @@
   border: 2px solid $dark-tan;
   position: relative;
   color: $dark-grey;
+}
 
-  //moving to img in html
-  // &:after {
-  //   content: "";
-  //   background-image: url('img/ico-arrow-right.png');
-  //   display: block;
-  //   position: absolute;
-  //   width: 21px;
-  //   height: 39px;
-  //   right: 30px;
-  //   transform: translateY(-50%);
-  //   top: 50%;
-  //   font-size: 3rem;
-  // }
+.industry__link {
+  @extend h2;
 }
 
 .industry__ico {

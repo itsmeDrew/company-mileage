@@ -111,7 +111,7 @@ get_header();
         <div class="industry__listing">
           <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
           <div class="industry__content">
-            <h2>Healthcare & Family Services</h2>
+            <a href="<?php echo get_permalink(50); ?>" class="industry__link">Healthcare & Family Services</a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
@@ -121,17 +121,18 @@ get_header();
         <div class="industry__listing">
           <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wallet.png" alt="ico-wallet" />
           <div class="industry__content">
-            <h2>Sales Representatives</h2>
+            <a href="#" class="industry__link">Sales Representatives</a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
           </div>
+          <a href="<?php echo get_permalink(50); ?>"></a>
           <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
         </div>
         <div class="industry__listing">
           <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wheel.png" alt="ico-healthcare" />
           <div class="industry__content">
-            <h2>Mobile Employees</h2>
+            <a href="<?php echo get_permalink(50); ?>" class="industry__link">Mobile Employees</a>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
             </p>
