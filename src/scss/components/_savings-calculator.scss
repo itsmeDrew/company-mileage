@@ -34,3 +34,9 @@
   display: inline-block;
   margin: .5rem;
 }
+
+.roi__btn {
+  @include breakpointSmallerThan($breakpoint--large) {
+    margin-top: 1rem;
+  }
+}
