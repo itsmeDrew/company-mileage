@@ -75,20 +75,35 @@
   @include borderRadius(0);
 
   background-color: $med-tan;
-  padding: 4rem 0;
   position: relative;
   color: $black;
   border: 1px solid $dark-grey;
   width: 100%;
+  height: 80px;
   margin: 0;
+  display: block;
 }
 
-.pagination__nav {
-  position: absolute;
-  top: 0;
-  right: 0;
+.pagination__count {
+  @include centerHorizontal();
+
+  padding: 0 2rem;
+  position: relative;
+  float: left;
+}
+
+.pagination__nav--next {
   height: 100%;
+  float: right;
   border-left: 1px solid $dark-grey;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.pagination__nav--prev {
+  height: 100%;
+  float: left;
+  border-right: 1px solid $dark-grey;
   width: 150px;
   box-sizing: border-box;
 }

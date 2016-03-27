@@ -18,7 +18,7 @@ get_header();
       elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
       else { $paged = 1; }
 
-      $wp_query = new WP_Query('posts_per_page=3&paged=' . $paged);
+      $wp_query = new WP_Query('posts_per_page=5&paged=' . $paged);
       global $wp_query;
       ?>
       <?php if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -48,13 +48,17 @@ get_header();
   </div>
 </div>
 <div class="pagination">
-  <div class="pagination__count container">
+  <div class="pagination__nav--prev">
+    <div class="pagination__links">
+      <?php previous_posts_link(); ?>
+    </div>
+  </div>
+  <div class="pagination__count">
     <?php echo 'Page '.intval(get_query_var('paged')).' of '.$wp_query->max_num_pages.''; ?>
   </div>
-  <div class="pagination__nav">
+  <div class="pagination__nav--next">
     <div class="pagination__links">
       <?php next_posts_link(); ?>
-      <?php previous_posts_link(); ?>
     </div>
   </div>
 </div>
