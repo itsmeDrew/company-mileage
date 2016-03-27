@@ -1,4 +1,4 @@
-      </div>
+=      </div>
       <footer class="site-footer row-fluid">
         <?php if (
           ! is_single() &&
@@ -40,12 +40,14 @@
             © 2016 CompanyMileage LLC
           </div>
           <div class="footer-social">
-            <a class="footer-social__link" href="#">
-              <i class="fa fa-twitter footer-social__icon"></i>
-            </a>
-            <a class="footer-social__link" href="#">
-              <i class="fa fa-facebook footer-social__icon"></i>
-            </a>
+            <div class="footer-social__content">
+              <a class="footer-social__link" href="#">
+                <i class="fa fa-twitter footer-social__icon"></i>
+              </a>
+              <a class="footer-social__link" href="#">
+                <i class="fa fa-facebook footer-social__icon"></i>
+              </a>
+            </div>
           </div>
         </div>
       </footer>
