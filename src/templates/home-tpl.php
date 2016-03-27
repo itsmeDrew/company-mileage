@@ -29,6 +29,9 @@ get_header();
     			<input type="text" name="Estimated Savings (25%)" id="estimated-savings">
           <span>Estimated Savings (25%)</span>
         </form>
+        <div class="roi__quote">
+          <?php echo do_shortcode('[contact-form-7 id="122" title="Calculate Savings Quote"]'); ?>
+        </div>
       </div>
     </div>
     <div class="jumbotron-display">
