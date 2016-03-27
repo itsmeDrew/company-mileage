@@ -68,3 +68,34 @@
 .post-demo {
   margin: 3rem 0;
 }
+
+// pagination
+
+.pagination {
+  @include borderRadius(0);
+
+  background-color: $med-tan;
+  padding: 4rem 0;
+  position: relative;
+  color: $black;
+  border: 1px solid $dark-grey;
+  width: 100%;
+  margin: 0;
+}
+
+.pagination__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-left: 1px solid $dark-grey;
+  width: 150px;
+  box-sizing: border-box;
+}
+
+.pagination__links {
+  @include centerAll();
+
+  position: relative;
+  text-align: center;
+}

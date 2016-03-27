@@ -46,12 +46,19 @@ get_header();
       <?php get_sidebar('blog'); ?>
     </div>
   </div>
-  <div class="row">
-    <?php previous_posts_link(); ?>
-    <?php echo 'Page '.intval(get_query_var('paged')).' of '.$wp_query->max_num_pages.''; ?>
-    <?php next_posts_link(); ?>
-  </div>
-<?php endif; wp_reset_postdata(); ?>
 </div>
+<div class="pagination">
+  <div class="pagination__count container">
+    <?php echo 'Page '.intval(get_query_var('paged')).' of '.$wp_query->max_num_pages.''; ?>
+  </div>
+  <div class="pagination__nav">
+    <div class="pagination__links">
+      <?php next_posts_link(); ?>
+      <?php previous_posts_link(); ?>
+    </div>
+  </div>
+</div>
+<?php endif; wp_reset_postdata(); ?>
+
 
 <?php get_footer(); ?>
