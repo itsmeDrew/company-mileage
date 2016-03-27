@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Blog
- *
+ * Template Name: Blog {OLD}
+ * NOT USED
  * @package Company Mileage
  * @subpackage company-mileage
  * @since Company Mileage 1.0.1
