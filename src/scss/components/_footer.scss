@@ -28,15 +28,19 @@
   margin: 2rem 0;
 }
 
-.company-info {
+.company {
+  border-right: 1px solid $grey;
+}
+
+.company__info {
   margin-top: 1rem;
 }
 
-.company-info__company {
+.company__name {
   font-weight: bold;
 }
 
-.company-info span {
+.company__info span {
   font-size: 18px;
   display: block;
   line-height: 1.5;
