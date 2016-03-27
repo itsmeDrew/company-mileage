@@ -13,7 +13,7 @@ get_header();
 <?php if ($queryBlog->have_posts()) : ?>
 <?php include(TEMPLATEPATH . '/subhead.php'); ?>
 
-<div class="blog container">
+<div class="site-blog container">
   <div class="row">
     <div class="blog-list col-md-8">
 

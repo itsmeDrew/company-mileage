@@ -13,9 +13,24 @@
 }
 
 .savings-calculator__input {
+  margin: 0;
+
   @include breakpointSmallerThan($breakpoint--medium) {
     display: block;
     width: 100%;
     margin: 2rem 0;
   }
+}
+
+.roi__quote {
+  @include cf();
+
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.roi__quote input {
+  display: inline-block;
+  margin: .5rem;
 }
