@@ -15,11 +15,21 @@ get_header();
     <p class="jumbotron__desc">
       CompanyMileage provides companies with significant savings on mileage reimbursement by accurately verifying employee mileage & automating the reimbursement process. How much could your company save?
     </p>
-    <div class="savings-calculator">
-      <input class="savings-calculator__input" type="text" name="name" placeholder="number of employees">
-      <input class="savings-calculator__input" type="text" name="name" placeholder="miles driven per week">
-      <input class="savings-calculator__input" type="text" name="name" placeholder="reimbursment rate">
-      <a class="btn-primary" href="#">calculate savings</a>
+    <div class="savings-calculator js-roi">
+      <div id="calculator" class="calculator">
+        <input type="text" class="savings-calculator__input" id="employee" tabindex="6" placeholder="How many employees">
+      	<input type="text" class="savings-calculator__input" id="miles" tabindex="6" placeholder="How many miles">
+      	<input type="text" class="savings-calculator__input" id="rate" tabindex="6" placeholder="Reimbursement Rate">
+        <a href="#" class="roi__btn btn-primary js-btn">calculate savings</a>
+      </div>
+      <div style="display:none;" class="roi__results">
+        <form method="post" id="mail_quote_frm" name="mail_quote_frm">
+    			<input type="text" name="Mileage Reimbursement" id="mileage-reimbursement">
+          <span>Mileage Reimbursement</span><br>
+    			<input type="text" name="Estimated Savings (25%)" id="estimated-savings">
+          <span>Estimated Savings (25%)</span>
+        </form>
+      </div>
     </div>
     <div class="jumbotron-display">
       <img class="jumbotron-display__img" src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />

@@ -68,6 +68,8 @@ module.exports = {
       , modules+'slick-carousel/slick/slick.min.js' // The modules directory contains packages downloaded via npm
       , src+'js/sliders.js'
       , src+'js/responsive-menu.js'
+      , src+'js/jquery.currency.min.js'
+      , src+'js/roi.js'
       , src+'js/core.js'
       ]
       // The pageloader chunk provides an example of how you would add a user-configurable feature to your theme; you can delete this if you wish
