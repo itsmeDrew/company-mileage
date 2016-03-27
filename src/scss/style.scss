@@ -1,18 +1,5 @@
 // ==== STYLES ==== //
 
-$slick-font-path: "fonts/";
-$fa-font-path: "fonts/" !default;
-
-@import '../../../node_modules/font-awesome/scss/font-awesome';
-@import '../../../node_modules/slick-carousel/slick/slick.scss';
-@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
-
-// Scut, a Sass utilities library: https://davidtheclark.github.io/scut/
-@import "scut/dist/scut";
-
-// VENDOR
-@import 'jeet/scss/jeet/index';
-
 // CORE
 @import "core/mixins";
 @import "core/colors";
@@ -31,6 +18,19 @@ Tags: #{metadata(theme-tags)}
 Text Domain: #{metadata(theme-text-domain)}
 Domain Path: #{metadata(theme-text-domain-path)}
 */
+
+$slick-font-path: "fonts/";
+$fa-font-path: "fonts/" !default;
+
+@import '../../../node_modules/font-awesome/scss/font-awesome';
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+// Scut, a Sass utilities library: https://davidtheclark.github.io/scut/
+@import "scut/dist/scut";
+
+// VENDOR
+@import 'jeet/scss/jeet/index';
 
 // BASE
 @import 'base/normalize';
