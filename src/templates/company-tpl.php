@@ -88,9 +88,7 @@ get_header();
     <div class="quote-request">
       <div class="quote-form">
         <h4 class="quote-request__heading">Watch a 2 Minute Demo of CompanyMileage</h4>
-        <div class="quote-form__input--wrapper">
           <?php echo do_shortcode('[contact-form-7 id="67" title="Demo 1"]'); ?>
-        </div>
       </div>
     </div>
   </div>

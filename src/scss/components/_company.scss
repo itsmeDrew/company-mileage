@@ -46,3 +46,11 @@
   height: 200px;
   overflow: hidden;
 }
+
+// form
+
+.page-template-company-tpl .demo-form__btn {
+  @include centerVertical();
+
+  position: relative;
+}
