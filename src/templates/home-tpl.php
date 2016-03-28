@@ -44,18 +44,11 @@ get_header();
     <header class="about-header">
       <h2 class="about-header__heading">Trusted nationwide by the distributted workforce:</h2>
       <ul class="about-cases__list row">
-        <li class="about-cases__list-item col-sm-3">
-          <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-cleveland-clinic.png" alt="cleveland clinic" />
-        </li>
-        <li class="about-cases__list-item col-sm-3">
-          <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-girl-scouts.png" alt="girl scouts" />
-        </li>
-        <li class="about-cases__list-item col-sm-3">
-          <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-cleveland-clinic.png" alt="cleveland clinic" />
-        </li>
-        <li class="about-cases__list-item col-sm-3">
-          <img class="about-cases__img" src="<?php bloginfo('template_url'); ?>/img/case-cleveland-clinic.png" alt="cleveland clinic" />
-        </li>
+        <?php if( have_rows('home-cases') ): while( have_rows('home-cases') ): the_row(); ?>
+          <li class="about-cases__list-item col-sm-3">
+            <img class="about-cases__img" src="<?php the_sub_field('case-img'); ?>" alt="case-img" />
+          </li>
+        <?php endwhile; endif; ?>
       </ul>
     </header>
     <div class="about-info col-md-6">
@@ -86,30 +79,16 @@ get_header();
       </p>
     </header>
     <ul class="solutions__list row">
+      <?php if( have_rows('home-solutions') ): while( have_rows('home-solutions') ): the_row(); ?>
       <li class="solutions__list-item col-md-4">
-        <img src="<?php bloginfo('template_url'); ?>/img/ico-solutions-key.png" alt="key" />
-        <h2>SureMileage</h2>
+        <img src="<?php the_sub_field('solution-ico'); ?>" alt="icon" />
+        <h2><?php the_sub_field('solution-title'); ?></h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+          <?php the_sub_field('solution-desc'); ?>
         </p>
-        <a class="solutions__btn btn-secondary" href="<?php echo get_permalink(13);?>">learn more</a>
+        <a class="solutions__btn btn-secondary" href="<?php the_sub_field('solution-link'); ?>">learn more</a>
       </li>
-      <li class="solutions__list-item col-md-4">
-        <img src="<?php bloginfo('template_url'); ?>/img/ico-solutions-key.png" alt="key" />
-        <h2>SureExpense</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-        </p>
-        <a class="solutions__btn btn-secondary" href="<?php echo get_permalink(104);?>">learn more</a>
-      </li>
-      <li class="solutions__list-item col-md-4">
-        <img src="<?php bloginfo('template_url'); ?>/img/ico-solutions-key.png" alt="key" />
-        <h2>SureMobile</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-        </p>
-        <a class="solutions__btn btn-secondary" href="<?php echo get_permalink(106);?>">learn more</a>
-      </li>
+      <?php endwhile; endif; ?>
     </ul>
   </div>
 </div>
