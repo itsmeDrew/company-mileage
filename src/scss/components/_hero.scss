@@ -7,15 +7,18 @@
   position: relative;
   margin: 0;
   background-color: $cm-blue;
+
+  h1 {
+    //bootstrap override
+    @extend h1;
+
+    font-weight: 500;
+  }
 }
 
 .jumbotron__heading {
   margin-bottom: 5rem;
   color: $white;
-}
-
-.jumbotron h1 {
-  @extend h1;
 }
 
 .jumbotron-display {
