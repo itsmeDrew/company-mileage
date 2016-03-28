@@ -100,37 +100,42 @@ get_header();
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       <div class="industry__list">
-        <div class="industry__listing">
-          <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
-          <div class="industry__content">
-            <a href="<?php echo get_permalink(50); ?>" class="industry__link">Healthcare & Family Services</a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-            </p>
+        <a href="<?php echo get_permalink(50); ?>">
+          <div class="industry__listing">
+            <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-healthcare.png" alt="ico-healthcare" />
+            <div class="industry__content">
+              <span class="industry__link">Healthcare & Family Services</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+              </p>
+            </div>
+            <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
           </div>
-          <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
-        </div>
-        <div class="industry__listing">
-          <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wallet.png" alt="ico-wallet" />
-          <div class="industry__content">
-            <a href="#" class="industry__link">Sales Representatives</a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-            </p>
+        </a>
+        <a href="<?php echo get_permalink(50); ?>">
+          <div class="industry__listing">
+            <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wallet.png" alt="ico-wallet" />
+            <div class="industry__content">
+              <span class="industry__link">Sales Representatives</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+              </p>
+            </div>
+            <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
           </div>
-          <a href="<?php echo get_permalink(50); ?>"></a>
-          <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
-        </div>
-        <div class="industry__listing">
-          <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wheel.png" alt="ico-healthcare" />
-          <div class="industry__content">
-            <a href="<?php echo get_permalink(50); ?>" class="industry__link">Mobile Employees</a>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
-            </p>
+        </a>
+        <a href="<?php echo get_permalink(50); ?>">
+          <div class="industry__listing">
+            <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wheel.png" alt="ico-healthcare" />
+            <div class="industry__content">
+              <span class="industry__link">Mobile Employees</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+              </p>
+            </div>
+            <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
           </div>
-          <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
-        </div>
+        </a>
       </div>
     </div>
   </div>
