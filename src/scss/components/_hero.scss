@@ -14,6 +14,10 @@
 
     font-weight: 500;
   }
+
+  .container {
+    max-width: 900px;
+  }
 }
 
 .jumbotron__heading {
@@ -32,9 +36,10 @@
 }
 
 .jumbotron p {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 24px;
+  line-height: 1.2;
   color: $white;
+  margin-bottom: 0;
 }
 
 .jumbotron--secondary {
@@ -75,12 +80,8 @@
   background-repeat: no-repeat;
 
   @include breakpointLargerThan($breakpoint--medium) {
-    padding: 10rem 0 25rem 0;
+    padding: 7rem 0 25rem 0;
     background-position: 50% 400px;
-
-    .container {
-      max-width: 750px;
-    }
   }
 
   @include breakpointSmallerThan($breakpoint--medium) {
