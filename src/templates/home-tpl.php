@@ -106,7 +106,7 @@ get_header();
             <div class="industry__content">
               <span class="industry__link">Healthcare & Family Services</span>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                Lorem consectetur ipsum dolor consectetur sit amet, consectetur adipisicing elit,as in another.
               </p>
             </div>
             <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
