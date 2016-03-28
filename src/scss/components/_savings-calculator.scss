@@ -9,15 +9,23 @@
   border: 2px solid $dark-tan;
   padding: 2rem;
   margin-bottom: 3rem;
-  display: inline-block;
 
-  .calculator {
+  @include breakpointLargerThan($breakpoint--medium) {
     display: inline-block;
+
+    .calculator {
+      display: inline-block;
+    }
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
 .savings-calculator__input {
-  margin: 0;
+  margin: 0 .5rem;
 
   @include breakpointSmallerThan($breakpoint--medium) {
     display: block;
