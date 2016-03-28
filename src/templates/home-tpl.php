@@ -42,7 +42,7 @@ get_header();
 <div class="about">
   <div class="container">
     <header class="about-header">
-      <h2 class="about-header__heading">Trusted nationwide by the distributted workforce:</h2>
+      <h2 class="about-header__heading">Trusted nationwide by the distributed workforce:</h2>
       <ul class="about-cases__list row">
         <?php if( have_rows('home-cases') ): while( have_rows('home-cases') ): the_row(); ?>
           <li class="about-cases__list-item col-sm-3">
