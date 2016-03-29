@@ -29,6 +29,7 @@
   color: $cm-blue;
   text-shadow: none;
   display: inline-block;
+  font-weight: 400;
 
   @include breakpointSmallerThan($breakpoint--medium) {
     font-size: 22px;
