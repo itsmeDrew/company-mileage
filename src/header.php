@@ -36,12 +36,12 @@
           <div class="navbar-top">
             <span class="site-login__phone">Call (877) 677 0377</span>
             <a class="btn-primary site-login__btn" href="<?php echo get_permalink(69); ?>">request demo</a>
-            <a class="btn-secondary site-login__btn" href="#">login</a>
+            <a class="btn-secondary site-login__btn" href="https://login.companymileage.com/" target="_blank">login</a>
           </div>
           <ul class="nav navbar-nav navbar-right">
             <?php $args = array(
               'depth'        => 2,
-              'exclude'      => '80',
+              'exclude'      => '80, 2',
               'post_status'  => 'publish',
               'sort_column'  => 'menu_order',
               'title_li'     => ''
