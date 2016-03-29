@@ -48,7 +48,7 @@ get_header();
             <li class="pricing__item">Payroll Integration*</li>
             <li class="pricing__item">Accounting Integration*</li>
             <li class="pricing__item">SureMobile Access</li>
-            <li class="pricing__item">Month-to-Month Conract</li>
+            <li class="pricing__item">Month-to-Month Contract</li>
             <li class="pricing__item">Full Library of Reports</li>
           </ul>
           <div class="pricing__footer">
@@ -66,7 +66,7 @@ get_header();
             <li class="pricing__item">Payroll Integration*</li>
             <li class="pricing__item">Accounting Integration*</li>
             <li class="pricing__item">SureMobile Access</li>
-            <li class="pricing__item">Month-to-Month Conract</li>
+            <li class="pricing__item">Month-to-Month Contract</li>
             <li class="pricing__item">Full Library of Reports</li>
           </ul>
           <div class="pricing__footer">
