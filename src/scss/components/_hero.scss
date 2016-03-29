@@ -35,11 +35,17 @@
   width: 100%;
 }
 
-.jumbotron p {
+.jumbotron__desc {
   font-size: 24px;
   line-height: 1.2;
   color: $white;
   margin-bottom: 0;
+  font-weight: 200;
+}
+
+.jumbotron p {
+  //bootstrap override
+  @extend .jumbotron__desc;
 }
 
 .jumbotron--secondary {
