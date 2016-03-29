@@ -47,7 +47,7 @@
                 <i class="fa fa-twitter footer-social__icon"></i>
               </a>
               <a class="footer-social__link" href="#">
-                <i class="fa fa-facebook footer-social__icon"></i>
+                <i class="fa fa-linkedin footer-social__icon"></i>
               </a>
             </div>
           </div>
