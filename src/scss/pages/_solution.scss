@@ -109,6 +109,11 @@
   text-align: center;
 }
 
+.onboarding-process {
+  & > .col-md-6 {
+    padding: .5rem;
+  }
+}
 .onboarding-process__step {
   @include cf();
 
@@ -121,13 +126,12 @@
 
   position: relative;
   float: left;
-  width: 10%;
   padding: .3rem;
 }
 
 .onboarding-process__step-content {
-  float: left;
-  width: 90%;
+  float: right;
+  width: 86%;
   height: 140px;
 }
 
