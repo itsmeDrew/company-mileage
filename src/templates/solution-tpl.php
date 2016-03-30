@@ -48,7 +48,7 @@ get_header();
       <?php if( have_rows('solution-benefits') ): while( have_rows('solution-benefits') ): the_row(); ?>
       <li class="benefits-list__list-item col-sm-4">
         <i class="benefits-list__icon fa <?php the_sub_field('solution-benefits-ico'); ?>"></i>
-        <h3 class="benefits-list__heading"><?php the_sub_field('solution-benefits-title'); ?></h3>
+        <h2 class="benefits-list__heading"><?php the_sub_field('solution-benefits-title'); ?></h2>
         <p class="benefits-list__p">
           <?php the_sub_field('solution-benefits-text'); ?>
         </p>
