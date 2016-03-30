@@ -26,7 +26,7 @@ get_header();
 </div>
 <div class="solution-about">
   <div class="container">
-    <h2 class="about-header__heading">Trusted nationwide by the distributted workforce:</h2>
+    <h2 class="about-header__heading">Trusted nationwide by the distributed workforce:</h2>
     <ul class="about-cases__list row">
     <?php if( have_rows('solution-cases') ): while( have_rows('solution-cases') ): the_row(); ?>
       <li class="about-cases__list-item col-sm-3">

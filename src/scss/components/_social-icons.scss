@@ -1,0 +1,8 @@
+.sfsi_widget {
+  // plugin override
+  position: relative;
+}
+
+.norm_row.sfsi_wDiv {
+  @include centerHorizontal();
+}
