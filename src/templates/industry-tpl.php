@@ -28,7 +28,11 @@ get_header();
 <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
     <div class="col-md-4">
-      <?php get_sidebar('industry'); ?>
+      <?php if( is_page(array( 145, 'concur-integration')) ) {?>
+        <?php get_sidebar('concur'); ?>
+      <?php } else { ?>
+        <?php get_sidebar('industry'); ?>
+      <?php }?>
     </div>
   </div>
 </div>
