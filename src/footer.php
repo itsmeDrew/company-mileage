@@ -39,14 +39,14 @@
 
         <div class="footer-bottom">
           <div class="container">
-            <strong class="copyright">© 2016 CompanyMileage LLC</strong>  
+            <strong class="copyright">© 2016 CompanyMileage LLC</strong>
           </div>
           <div class="footer-social">
             <div class="footer-social__content">
-              <a class="footer-social__link" href="#">
+              <a class="footer-social__link" href="https://twitter.com/companymileage">
                 <i class="fa fa-twitter footer-social__icon"></i>
               </a>
-              <a class="footer-social__link" href="#">
+              <a class="footer-social__link" href="https://www.linkedin.com/company/companymileage-com">
                 <i class="fa fa-linkedin footer-social__icon"></i>
               </a>
             </div>
