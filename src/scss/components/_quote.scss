@@ -19,6 +19,11 @@
     color: $white;
   }
 
+  .quote-form {
+    max-width: 415px;
+    margin: 0 auto;
+  }
+
   @include breakpointLargerThan($breakpoint--medium) {
     background-size: 100% auto;
   }
@@ -46,6 +51,8 @@
 
   width: 100%;
   margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .quote-form {
