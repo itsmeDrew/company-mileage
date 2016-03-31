@@ -17,9 +17,9 @@ get_header();
     </p>
     <div class="savings-calculator js-roi">
       <div id="calculator" class="calculator">
-        <input type="text" class="savings-calculator__input" id="employee" tabindex="6" placeholder="How many employees">
-      	<input type="text" class="savings-calculator__input" id="miles" tabindex="6" placeholder="How many miles">
-      	<input type="text" class="savings-calculator__input" id="rate" tabindex="6" placeholder="Reimbursement Rate">
+        <input type="text" class="savings-calculator__input" id="employee" tabindex="6" placeholder="How Many Employees?">
+      	<input type="text" class="savings-calculator__input" id="miles" tabindex="6" placeholder="How Many Miles?">
+      	<input type="text" class="savings-calculator__input" id="rate" tabindex="6" placeholder="Reimbursement Rate?">
         <a href="#" class="roi__btn btn-primary js-btn">calculate savings</a>
       </div>
       <div style="display:none;" class="roi__results">

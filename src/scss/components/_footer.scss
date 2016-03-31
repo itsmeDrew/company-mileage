@@ -30,6 +30,17 @@
 
 .footer-blog__link {
   font-size: 24px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 105%;
+    top: 5px;
+    background: url('img/ico-arrow-right-small.png');
+    width: 14px;
+    height: 23px;
+  }
 }
 
 .company {
@@ -60,8 +71,15 @@
 }
 
 .copyright {
-  font-size: 24px;
   font-weight: 400;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    font-size: 24px;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    font-size: 16px;
+  }
 }
 
 .footer-social {

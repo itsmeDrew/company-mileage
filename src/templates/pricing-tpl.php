@@ -34,9 +34,7 @@ get_header();
             <li class="pricing__item">Month-to-Month Contract</li>
             <li class="pricing__item">Full LIbrary of Reports</li>
           </ul>
-          <div class="pricing__footer">
-            <a class="pricing__link" href="<?php echo get_permalink(13); ?>">request demo</a>
-          </div>
+          <a class="pricing__footer pricing__link" href="<?php echo get_permalink(182); ?>" href="#">request demo</a>
         </div>
         <div class="pricing__block col-sm-4">
           <div class="pricing__header">
@@ -51,9 +49,7 @@ get_header();
             <li class="pricing__item">Month-to-Month Contract</li>
             <li class="pricing__item">Full Library of Reports</li>
           </ul>
-          <div class="pricing__footer">
-            <a class="pricing__link" href="<?php echo get_permalink(104); ?>">request demo</a>
-          </div>
+          <a class="pricing__footer pricing__link" href="<?php echo get_permalink(182); ?>" href="#">request demo</a>
         </div>
         <div class="pricing__block col-sm-4">
           <div class="pricing__header">
@@ -69,9 +65,7 @@ get_header();
             <li class="pricing__item">Month-to-Month Contract</li>
             <li class="pricing__item">Full Library of Reports</li>
           </ul>
-          <div class="pricing__footer">
-            <a class="pricing__link" href="<?php echo get_permalink(145); ?>" href="#">request demo</a>
-          </div>
+          <a class="pricing__footer pricing__link" href="<?php echo get_permalink(182); ?>" href="#">request demo</a>
         </div>
       </div>
 <?php endwhile; endif; wp_reset_postdata(); ?>

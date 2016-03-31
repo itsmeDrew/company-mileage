@@ -54,6 +54,8 @@
   text-transform: uppercase;
   background-color: #3599d5;
   color: $white;
+  display: block;
+  font-size: 14px;
   font-weight: 400;
   padding: 1rem 0;
   border-bottom-left-radius: 5px;
@@ -64,11 +66,7 @@
   -webkit-border-bottom-right-radius: 5px;
 
   &:hover {
-    background: darken($cm-blue, 5%);
-  }
-
-  .pricing__link {
     color: $white;
-    font-size: 14px;
+    background: darken($cm-blue, 5%);
   }
 }
