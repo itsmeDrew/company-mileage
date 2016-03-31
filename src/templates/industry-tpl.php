@@ -14,6 +14,7 @@ get_header();
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="jumbotron--secondary" style="background-image: url('<?php the_field('hero_image'); ?>');">
   <div class="container">
+    <img class="jumbtron__logo" src="<?php the_field('hero_logo'); ?>" alt="hero logo" />
     <h1 class="jumbotron__heading"><?php the_field('hero_text'); ?></h1>
   </div>
 </div>

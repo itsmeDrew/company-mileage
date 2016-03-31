@@ -21,6 +21,10 @@
   }
 }
 
+.jumbotron__logo {
+  float: left;
+}
+
 .jumbotron__heading {
   margin-bottom: 5rem;
   color: $white;
@@ -53,11 +57,12 @@
   @extend .jumbotron;
 
   background-size: cover;
+  background-position: center;
   padding: 10rem 0;
+  text-align: left;
 
   .jumbotron__heading {
-    text-align: left;
-    max-width: 700px;
+    max-width: 760px;
   }
 
   &:before {
