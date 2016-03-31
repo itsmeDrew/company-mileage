@@ -7,6 +7,10 @@
     padding: 8rem 0 17rem 0;
     margin-bottom: 16rem;
 
+    @include breakpointSmallerThan($breakpoint--large) {
+      margin-bottom: 33rem;
+    }
+
     .container {
       position: relative;
     }
@@ -28,5 +32,9 @@
   .quote-request {
     position: absolute;
     bottom: -330px;
+
+    @include breakpointSmallerThan($breakpoint--large) {
+      bottom: -500px;
+    }
   }
 }

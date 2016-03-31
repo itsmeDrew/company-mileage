@@ -53,10 +53,19 @@
 .quote-request {
   @extend .form-box;
 
-  width: 100%;
   margin: 0;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    width: 100%;
+  }
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    @include centerVertical();
+
+    width: 90%;
+  }
 }
 
 .quote-form {
