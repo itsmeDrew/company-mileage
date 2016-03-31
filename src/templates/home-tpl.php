@@ -35,7 +35,7 @@ get_header();
       </div>
     </div>
     <div class="jumbotron-display">
-      <img class="jumbotron-display__img" src="<?php bloginfo('template_url'); ?>/img/map.jpg" alt="map" />
+      <img class="jumbotron-display__img" src="<?php bloginfo('template_url'); ?>/img/hero-home.png" alt="company mileage" />
     </div>
   </div>
 </div>
@@ -112,7 +112,7 @@ get_header();
             <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
           </div>
         </a>
-        <a href="<?php echo get_permalink(50); ?>">
+        <a href="<?php echo get_permalink(59); ?>">
           <div class="industry__listing">
             <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wallet.png" alt="ico-wallet" />
             <div class="industry__content">
@@ -124,7 +124,7 @@ get_header();
             <img class="industry__ico--arrow" src="<?php bloginfo('template_url'); ?>/img/ico-arrow-right.png" alt="ico" />
           </div>
         </a>
-        <a href="<?php echo get_permalink(50); ?>">
+        <a href="<?php echo get_permalink(138); ?>">
           <div class="industry__listing">
             <img class="industry__ico hidden--sm" src="<?php bloginfo('template_url'); ?>/img/ico-wheel.png" alt="ico-healthcare" />
             <div class="industry__content">
