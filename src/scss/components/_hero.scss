@@ -13,6 +13,7 @@
     @extend h1;
 
     font-weight: 800;
+    line-height: 1.2;
   }
 
   .container {
@@ -137,7 +138,7 @@
 }
 
 .page-template-company-tpl .jumbotron__container {
-  @include breakpointLargerThan($breakpoint--medium) {
+  @include breakpointLargerThan($breakpoint--xlarge) {
     width: 900px;
   }
 }
