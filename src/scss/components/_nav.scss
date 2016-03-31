@@ -100,8 +100,11 @@
 /*mobile menu*/
 
 .dropdown-menu > li > a {
+  // bootstrap overrides
     padding: 8px 20px;
-    color: $cm-blue;
+    color: $cm-blue !important;
+    text-align: center;
+    font-size: 18px;
 }
 .dropdown-menu > li:first-child > a{
     border-radius: 10px 10px 0 0;
@@ -112,7 +115,7 @@
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background-color: #F5F5F5;
-    color: #333333;
+    color: #333333 !important;
     opacity: 1;
     text-decoration: none;
 }
