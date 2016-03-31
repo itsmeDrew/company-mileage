@@ -28,6 +28,10 @@
   margin: 2rem 0;
 }
 
+.footer-blog__link {
+  font-size: 24px;
+}
+
 .company {
   border-right: 1px solid $grey;
 }
@@ -41,7 +45,7 @@
 }
 
 .company__info span {
-  font-size: 18px;
+  font-size: 24px;
   display: block;
   line-height: 1.5;
 }
@@ -53,6 +57,11 @@
   padding: 4rem 0;
   position: relative;
   color: $white;
+}
+
+.copyright {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .footer-social {

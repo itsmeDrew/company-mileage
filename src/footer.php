@@ -39,7 +39,7 @@
 
         <div class="footer-bottom">
           <div class="container">
-            © 2016 CompanyMileage LLC
+            <strong class="copyright">© 2016 CompanyMileage LLC</strong>  
           </div>
           <div class="footer-social">
             <div class="footer-social__content">
