@@ -33,6 +33,10 @@
     width: 100%;
     margin: 2rem 0;
   }
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    font-size: 13px;
+  }
 }
 
 .roi__quote {
@@ -49,7 +53,7 @@
 }
 
 .roi__btn {
-  padding: 1rem 7rem;
+  padding: .75rem 7rem;
 
   @include breakpointSmallerThan($breakpoint--large) {
     margin-top: 1rem;
