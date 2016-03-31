@@ -85,40 +85,70 @@
   background-color: $med-tan;
   position: relative;
   color: $black;
-  border: 1px solid $dark-grey;
   width: 100%;
-  height: 80px;
   margin: 0;
   display: block;
+
+  @include breakpointLargerThan($breakpoint--small) {
+    height: 80px;
+    border: 1px solid $dark-grey;
+  }
 }
 
 .pagination__count {
-  @include centerHorizontal();
 
   padding: 0 2rem;
   position: relative;
-  float: left;
+
+  @include breakpointLargerThan($breakpoint--small) {
+    @include centerHorizontal();
+
+    float: left;
+  }
+
+  @include breakpointSmallerThan($breakpoint--small) {
+    padding: 1rem 0;
+    text-align: center;
+    background: darken($grey, 5%);
+  }
 }
 
 .pagination__nav--next {
   height: 100%;
-  float: right;
-  border-left: 1px solid $dark-grey;
-  width: 150px;
   box-sizing: border-box;
+
+  @include breakpointLargerThan($breakpoint--small) {
+    width: 150px;
+    float: right;
+    border-left: 1px solid $dark-grey;
+  }
 }
 
 .pagination__nav--prev {
   height: 100%;
-  float: left;
-  border-right: 1px solid $dark-grey;
-  width: 150px;
   box-sizing: border-box;
+
+  @include breakpointLargerThan($breakpoint--small) {
+    float: left;
+    border-right: 1px solid $dark-grey;
+    width: 150px;
+  }
 }
 
 .pagination__links {
-  @include centerAll();
 
   position: relative;
   text-align: center;
+
+  @include breakpointLargerThan($breakpoint--small) {
+    @include centerAll();
+  }
+
+  @include breakpointSmallerThan($breakpoint--small) {
+    a {
+      padding: 1rem 0;
+      display: block;
+    }
+  }
+
 }
