@@ -14,12 +14,6 @@
 <!-- bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<?php
-  if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
-      wpcf7_enqueue_scripts();
-  }
-?>
-
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
