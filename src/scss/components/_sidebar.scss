@@ -54,8 +54,25 @@
 .sidebar-subscribe {
   @extend .sidebar;
 
-  background: $tan;
-  border: 3px solid $dark-tan
+  background: $med-tan;
+
+  input {
+    border: none;
+    margin: .75rem 0;
+  }
+
+  .sidebar-form__btn {
+    width: 100%;
+  }
+
+  .sidebar-form {
+    padding: 1rem 0;
+  }
+
+  .sidebar-heading {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 
 // post-data
