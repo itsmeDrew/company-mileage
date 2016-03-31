@@ -13,10 +13,18 @@
   }
 }
 
+.sidebar-widget {
+  h2 {
+    text-transform: capitalize;
+  }
+}
+
 .sidebar-heading {
   font-size: 18px;
   margin: 0 0 10px 0;
 }
+
+// sidebar form
 
 .sidebar-form {
   padding: 2rem 0;
@@ -24,18 +32,11 @@
 
 .sidebar-form__input {
   width: 100%;
-  // display: block;
 }
 
 .sidebar-form__btn {
   display: block;
   text-align: center;
-}
-
-.sidebar-widget {
-  h2 {
-    text-transform: capitalize;
-  }
 }
 
 // sidebar list
@@ -49,7 +50,7 @@
   }
 }
 
-// blog
+// sidebar-subscribe
 
 .sidebar-subscribe {
   @extend .sidebar;
@@ -93,8 +94,22 @@
   padding: 1rem 0;
 }
 
-// contact
+// sidebar-demo
+
+.sidebar-demo {
+  @extend .sidebar;
+
+  background-color: $tan;
+  border: 3px solid $dark-tan;
+  padding: 1.8rem;
+
+  textarea {
+    max-height: 180px;
+  }
+}
+
+// sidebar-email
 
 .sidebar-email {
-  margin-bottom: 3rem;
+  margin-bottom: 5.5rem;
 }

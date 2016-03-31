@@ -1,6 +1,6 @@
 // ==== FORMS ==== //
 
-input {
+input, textarea {
   @include borderRadius(5px);
 
   border: 2px solid $dark-tan;
