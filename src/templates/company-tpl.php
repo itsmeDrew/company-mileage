@@ -19,10 +19,10 @@ get_header();
 </div>
 <div class="technology">
   <div class="container">
-    <div class="col-md-6">
-      <img src="<?php bloginfo('template_url'); ?>/img/ico-gauge.png" alt="ico" />
+    <div class="col-sm-6">
+      <img class="technology__ico" src="<?php bloginfo('template_url'); ?>/img/ico-gauge.png" alt="ico" />
     </div>
-    <div class="col-md-6">
+    <div class="col-sm-6">
       <p>
         CompanyMileage uses a proprietary, automated web-based technology that accurately verifies employee mileage and manages the entire reimbursement process. Our system provides companies with significant savings on their mileage reimbursement in an accurate, measurable way that is painless to implement.
       </p>
@@ -31,19 +31,19 @@ get_header();
 </div>
 <div class="team">
   <div class="container">
-    <header class="team-header">
+    <div class="team-header">
       <h2 class="team-header__heading">our executive team</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
       </p>
-    </header>
+    </div>
     <div class="team-member row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div class="team-member__img--wrapper">
           <img class="team-member__img" src="http://lorempixel.com/200/200" alt="team member" />
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div class="team-member__header">
           <h2>Kevin Winters</h2>
           <h2>Founder</h2>
@@ -60,12 +60,12 @@ get_header();
       </div>
     </div>
     <div class="team-member row">
-      <div class="col-md-6">
+      <div class="col-sm-6">
         <div class="team-member__img--wrapper">
           <img class="team-member__img" src="http://lorempixel.com/200/200" alt="team member" />
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-sm-6">
       <div class="team-member__header">
         <h2>Denny Alvarez</h2>
         <h2>Partner & Head of Operations</h2>
