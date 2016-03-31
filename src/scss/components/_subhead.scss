@@ -64,6 +64,8 @@
 
   position: relative;
   text-align: right;
+  float: right;
+  width: 120px;
 
   @include breakpointSmallerThan($breakpoint--small) {
     display: none;

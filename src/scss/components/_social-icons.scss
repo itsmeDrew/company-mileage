@@ -5,4 +5,6 @@
 
 .norm_row.sfsi_wDiv {
   @include centerHorizontal();
+
+  width: auto !important;
 }

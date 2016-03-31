@@ -24,7 +24,7 @@
 
         <?php } ?>
       </div>
-      <div class="subhead-social col-xs-4">
+      <div class="subhead-social">
         <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
       </div>
     </div>
