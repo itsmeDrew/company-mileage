@@ -1,7 +1,7 @@
 <div class="sidebar-blog-posts">
   <div class="post-data">
-    <img class="post-data__img" src="<?php bloginfo('template_url'); ?>/img/author.png" alt="post-author" />
-    <p class="post-data__author">By CompanyMileage Team</p>
+    <?php echo get_avatar( get_the_author_email(), '200' ); ?>
+    <p class="post-data__author">By <?php the_author(); ?></p>
     <p class="post-data__date"><?php the_time('F j, Y'); ?></p>
   </div>
   <div class="sidebar-subscribe">

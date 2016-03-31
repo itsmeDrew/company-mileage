@@ -84,10 +84,14 @@
   }
 }
 
-.post-data__img {
+.post-data__img, .avatar.photo {
   display: block;
   margin: 0 auto;
   padding: 1rem 0;
+}
+
+.post-data__author {
+  text-transform: capitalize;
 }
 
 // sidebar-demo
