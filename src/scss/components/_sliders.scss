@@ -43,6 +43,12 @@
 
 // Feature Slider
 
+.feature-slider__controls {
+  @include breakpointSmallerThan($breakpoint--large) {
+    margin-top: 7rem;
+  }
+}
+
 .feature-slider__control {
   @extend .form-box;
 

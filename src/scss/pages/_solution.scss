@@ -131,8 +131,17 @@
 
 .onboarding-process__step-content {
   float: right;
-  width: 86%;
   height: 140px;
+
+  @include breakpointLargerThan($breakpoint--large) {
+    width: 86%;
+  }
+
+  @include breakpointSmallerThan($breakpoint--large) {
+    width: 100%;
+  }
+
+
 }
 
 .onboarding-process__heading {
