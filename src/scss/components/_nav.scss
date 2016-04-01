@@ -104,7 +104,10 @@
     padding: 8px 20px;
     color: $cm-blue !important;
     text-align: center;
-    font-size: 18px;
+
+    @include breakpointSmallerThan($breakpoint--medium) {
+      font-size: 18px;
+    }
 }
 .dropdown-menu > li:first-child > a{
     border-radius: 10px 10px 0 0;
