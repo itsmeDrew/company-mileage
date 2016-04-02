@@ -112,6 +112,14 @@
   textarea {
     max-height: 180px;
   }
+
+  .sidebar-form {
+    input[type="submit"] {
+      display: inline-block;
+      width: auto;
+    }
+  }
+
 }
 
 .sidebar-demo__contact {

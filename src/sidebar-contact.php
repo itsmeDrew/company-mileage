@@ -7,7 +7,7 @@
   </div>
   <div class="sidebar-demo">
     <div class="sidebar-form">
-      <?php echo do_shortcode('[contact-form-7 id="163" title="Contact Form"]'); ?>
+      <?php echo do_shortcode('[gravityform id="9" title="false" description="false"]'); ?>
     </div>
   </div>
 </div>

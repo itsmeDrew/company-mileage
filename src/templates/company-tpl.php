@@ -88,7 +88,7 @@ get_header();
     <div class="quote-request">
       <div class="quote-form">
         <h4 class="quote-request__heading">Watch a 2 Minute Demo of CompanyMileage</h4>
-          <?php echo do_shortcode('[contact-form-7 id="67" title="Demo 1"]'); ?>
+          <?php echo do_shortcode('[gravityform id="10" title="false" description="false"]'); ?>
       </div>
     </div>
   </div>

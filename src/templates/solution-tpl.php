@@ -206,7 +206,7 @@ get_header();
     <div class="quote-request row-fluid">
       <h4 class="quote-request__heading">See CompanyMileage in Action</h4>
       <div class="quote-form">
-        <?php echo do_shortcode('[contact-form-7 id="87" title="Solution Demo"]'); ?>
+        <?php echo do_shortcode('[gravityform id="11" title="false" description="false"]'); ?>
       </div>
     </div>
   </div>
