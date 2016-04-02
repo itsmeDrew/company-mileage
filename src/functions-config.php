@@ -18,3 +18,9 @@ function new_excerpt_more($more) {
 
 add_filter('excerpt_more', 'new_excerpt_more');
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+///////////////////////////
+/// GRAVITY FORMS
+///////////////////////////
+
+add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );

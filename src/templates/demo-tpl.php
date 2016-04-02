@@ -26,7 +26,7 @@ get_header();
     <strong class="jumbotron__heading--secondary">Call (877) 677-0377 or fill out the contact form below.</strong>
     <div class="quote-request row-fluid">
       <h4 class="quote-request__heading">Contact A Representative</h4>
-      <?php echo do_shortcode( '[contact-form-7 id="71" title="Contact a Representative"]' ); ?>
+      <?php echo do_shortcode('[gravityform id="8" title="false" description="false"]'); ?>
     </div>
   </div>
 </div>

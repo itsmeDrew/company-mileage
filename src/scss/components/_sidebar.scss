@@ -28,6 +28,12 @@
 
 .sidebar-form {
   padding: 1rem 0;
+
+  input[type="submit"] {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .sidebar-form__input {

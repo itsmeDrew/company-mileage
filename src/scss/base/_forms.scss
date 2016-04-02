@@ -27,3 +27,59 @@ input, textarea {
   float: none;
   display: inline-block;
 }
+
+
+// gravity forms
+// override craziness
+
+.gform_wrapper {
+  // margin: 0 !important;
+  // max-width: 100% !important;
+  //
+  .gform_body {
+    @include cf();
+
+    input {
+      width: 100% !important;
+      // margin: 1rem 0;
+    }
+  }
+
+  label {
+    display: none !important;
+  }
+
+  input[type="submit"] {
+    @extend .btn-primary;
+  }
+
+  .ginput_container_select {
+    padding-top: .1rem;
+
+    .gfield_select {
+      @extend input;
+
+      background: $white;
+      color: #a9a9a9;
+      padding: 0 !important;
+    }
+  }
+
+  // li input {
+  //   margin: .75rem 0 !important;
+  //   display: inline-block;
+  // }
+  //
+  // .gform_button {
+  //   @extend .btn-primary;
+  // }
+  //
+  // .gform_footer, .gform_footer.top_label {
+  //   margin: 0 !important;
+  //   padding: 0;
+  // }
+  //
+  // .ginput_container {
+  //   margin: 0 !important;
+  // }
+}

@@ -38,7 +38,7 @@ get_header();
             </p>
           </div>
           <div class="demo-form col-sm-6">
-            <?php echo do_shortcode('[contact-form-7 id="187" title="Blog Single Demo"]'); ?>
+            <?php echo do_shortcode('[gravityform id="5" title="false" description="false"]'); ?>
           </div>
         </div>
       </div>

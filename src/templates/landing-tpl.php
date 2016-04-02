@@ -17,7 +17,7 @@ get_header();
           <?php the_content(); ?>
         <?php endwhile; endif; wp_reset_postdata(); ?>
         <div class="sidebar-demo">
-          <?php echo do_shortcode('[contact-form-7 id="185" title="Landing Request Demo"]'); ?>
+          <?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
         </div>
       </div>
     </div>

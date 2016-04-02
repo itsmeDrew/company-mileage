@@ -37,8 +37,43 @@
   margin-bottom: 2.1rem;
 }
 
+// home
 
-// contact {company page}
+.page-template-home-tpl .quote-form {
+  max-width: 700px;
+
+  .gform_body {
+    li.gfield {
+      @include breakpointLargerThan($breakpoint--medium) {
+        width: 49%;
+        padding: 5px 1%;
+        float: left;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.page-template-demo-tpl .quote-request {
+  .gform_body {
+    li.gfield {
+      @include breakpointLargerThan($breakpoint--medium) {
+        width: 49%;
+        padding: 5px 1%;
+        float: left;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// contact
 
 .page-id-17 .quote {
   background-repeat: repeat-y;
@@ -65,6 +100,7 @@
     @include centerVertical();
 
     width: 90%;
+    position: relative;
   }
 }
 

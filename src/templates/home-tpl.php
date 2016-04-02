@@ -30,7 +30,7 @@ get_header();
           <span>Estimated Savings (25%)</span>
         </form>
         <div class="roi__quote">
-          <?php echo do_shortcode('[contact-form-7 id="122" title="Calculate Savings Quote"]'); ?>
+          <?php echo do_shortcode('[gravityform id="6" title="false" description="false"]'); ?>
         </div>
       </div>
     </div>
@@ -150,7 +150,9 @@ get_header();
     </div>
     <div class="quote-request row-fluid">
       <h4 class="quote-request__heading">get a quote</h4>
-      <?php echo do_shortcode( '[contact-form-7 id="68" title="Home Quote"]' ); ?>
+      <div class="quote-form">
+        <?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
+      </div>
     </div>
   </div>
 </div>
