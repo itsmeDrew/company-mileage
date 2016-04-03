@@ -9,7 +9,7 @@
     <p>Subscribe to our blog:</p>
 
     <div class="sidebar-form">
-      <?php echo do_shortcode('[contact-form-7 id="102" title="Sidebar Blog"]'); ?>
+      <?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
     </div>
   </div>
 </div>
