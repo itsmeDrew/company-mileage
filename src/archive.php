@@ -9,15 +9,14 @@
 get_header();
 ?>
 
-<?php $queryBlog = new WP_Query(array( 'posts_per_page' => 5)); ?>
-<?php if ($queryBlog->have_posts()) : ?>
+<?php if ( have_posts() ) : ?>
 <?php include(TEMPLATEPATH . '/subhead.php'); ?>
 
 <div class="site-blog container">
   <div class="row">
     <div class="blog-list col-md-8">
 
-      <?php while ($queryBlog->have_posts()) : $queryBlog->the_post(); ?>
+      <?php	while ( have_posts() ) : the_post(); ?>
       <div class="blog-listing">
         <div class="blog-listing__header">
           <h2 class="blog-listing__heading"><a href="<?php echo the_permalink();?>"><?php the_title(); ?></a></h2>
