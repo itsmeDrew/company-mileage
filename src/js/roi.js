@@ -21,6 +21,11 @@
       $('#mileage-reimbursement').val("$" + $.currency(_total, {c: 0}));
       $('#estimated-savings').val("$" + $.currency(_estimatedSavings, {c: 0}));
 
+      $('.roi-employees').find('input').val(_employees);
+      $('.roi-miles').find('input').val(_milesPerWeek);
+      $('.roi-reimbursement').find('input').val("$" + $.currency(_total, {c: 0}));
+      $('.roi-savings').find('input').val("$" + $.currency(_estimatedSavings, {c: 0}));
+
     	return true;
     }
 

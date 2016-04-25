@@ -17,9 +17,18 @@ get_header();
     </p>
     <div class="savings-calculator js-roi">
       <div id="calculator" class="calculator">
-        <input type="text" class="savings-calculator__input" id="employee" tabindex="6" placeholder="How Many Employees?">
-      	<input type="text" class="savings-calculator__input" id="miles" tabindex="6" placeholder="How Many Miles?">
-      	<input type="text" class="savings-calculator__input" id="rate" tabindex="6" placeholder="Reimbursement Rate?">
+        <div class="savings-calculator__input-row">
+          <label class="savings-calculator__label">How many mobile employees</label>
+          <input type="text" class="savings-calculator__input" id="employee" tabindex="6" value="100">
+        </div>
+        <div class="savings-calculator__input-row">
+          <label class="savings-calculator__label">Average miles driven per week</label>
+        	<input type="text" class="savings-calculator__input" id="miles" tabindex="6" value="200">
+        </div>
+        <div class="savings-calculator__input-row">
+          <label class="savings-calculator__label">reimbursement rate</label>
+        	<input type="text" class="savings-calculator__input" id="rate" tabindex="6" value=".50">
+        </div>
         <a href="#" class="roi__btn btn-primary js-btn">calculate savings</a>
       </div>
       <div style="display:none;" class="roi__results">

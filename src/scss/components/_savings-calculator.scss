@@ -26,9 +26,8 @@
 }
 
 .savings-calculator__input {
-  margin: 0 .5rem;
-
   @include breakpointSmallerThan($breakpoint--medium) {
+    font-size: 13px;
     display: block;
     width: 100%;
     margin: 2rem 0;
@@ -36,14 +35,32 @@
 
   @include breakpointLargerThan($breakpoint--medium) {
     font-size: 13px;
+    float: left;
   }
+}
+
+.savings-calculator__label, .gfield_label {
+  display: block;
+  text-align: left;
+  text-transform: capitalize;
+
+  @include breakpointSmallerThan($breakpoint--medium) {
+    font-size: 16px;
+  }
+
+  @include breakpointLargerThan($breakpoint--medium) {
+    font-size: 13px;
+  }
+}
+
+.savings-calculator__input-row {
+  display: inline-block;
+  margin: 0 .5rem;
 }
 
 .roi__quote {
   @include cf();
-
-  width: 80%;
-  margin: 0 auto;
+  
   text-align: center;
 }
 
@@ -57,5 +74,10 @@
 
   @include breakpointSmallerThan($breakpoint--large) {
     margin-top: 1rem;
+  }
+
+  @include breakpointLargerThan($breakpoint--large) {
+    position: relative;
+    top: 32px;
   }
 }

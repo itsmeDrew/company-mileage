@@ -33,9 +33,6 @@ input, textarea {
 // override craziness
 
 .gform_wrapper {
-  // margin: 0 !important;
-  // max-width: 100% !important;
-  //
   .gform_body {
     @include cf();
 
@@ -48,10 +45,6 @@ input, textarea {
     textarea {
       max-height: 185px;
     }
-  }
-
-  label {
-    display: none !important;
   }
 
   input[type="submit"] {
@@ -72,22 +65,8 @@ input, textarea {
       padding: 0 !important;
     }
   }
+}
 
-  // li input {
-  //   margin: .75rem 0 !important;
-  //   display: inline-block;
-  // }
-  //
-  // .gform_button {
-  //   @extend .btn-primary;
-  // }
-  //
-  // .gform_footer, .gform_footer.top_label {
-  //   margin: 0 !important;
-  //   padding: 0;
-  // }
-  //
-  // .ginput_container {
-  //   margin: 0 !important;
-  // }
+.gf_hidden {
+  display: none;
 }
